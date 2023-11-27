@@ -26,24 +26,12 @@ const Projects = () => {
       y: 0,
       transition: { duration: 0.75 },
     },
-    closed: {
-      rotate: 10,
-      x: -200,
-      y: 100,
-      transition: { duration: 0.75 },
-    },
   };
   const variants2 = {
     open: {
       rotate: -30,
       x: 0,
       y: 0,
-      transition: { duration: 0.75 },
-    },
-    closed: {
-      rotate: -10,
-      x: 200,
-      y: -100,
       transition: { duration: 0.75 },
     },
   };
@@ -95,7 +83,7 @@ const Projects = () => {
               className="absolute z-10 right-0 top-10 shadow-2xl rounded-2xl"
               initial={{ rotate: 0, x: 200, y: -100 }}
               variants={variants2}
-              animate={onHover ? "open" : "closed"}
+              animate={onHover ? "open" : ""}
             />
           </LinkMotion>
           <LinkMotion
@@ -119,7 +107,7 @@ const Projects = () => {
               className="absolute z-10 left-0 top-10 shadow-2xl rounded-2xl"
               initial={{ rotate: 0, x: -200, y: 100 }}
               variants={variants}
-              animate={onHover ? "open" : "closed"}
+              animate={onHover ? "open" : ""}
             />
             <ImageMotion
               src="/project-1-1.png"
