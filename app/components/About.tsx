@@ -21,13 +21,13 @@ const About = () => {
           </h3>
           <div className="mt-1 h-1 bg-white max-w-[100px] flex justify-center m-auto mb-6 sm:mb-12 " />
           <p className="text-[#ADB7BE] text-base px-2 sm:text-lg mb-6 lg:text-xl lg:max-w-[700px]  mx-auto text-center">
-            I'm a Frontend Web Developer building the Front-end of Websites and
-            Web Applications that leads to the success of the overall product.
-            Check out some of my work in the Projects section.
+            I&apos;m a Frontend Web Developer building the Front-end of Websites
+            and Web Applications that leads to the success of the overall
+            product. Check out some of my work in the Projects section.
             <br />
-            I'm open to Job opportunities where I can contribute, learn and
+            I&apos;m open to Job opportunities where I can contribute, learn and
             grow. If you have a good opportunity that matches my skills and
-            experience then don't hesitate to contact me.
+            experience then don&apos;t hesitate to contact me.
           </p>
         </div>
         <div className="w-full sm:h-screen relative flex items-center justify-center rounded-full bg-circularLight xl:bg-circularLightSm py-20 mx-auto my-10 lg:my-24">
