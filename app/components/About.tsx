@@ -31,12 +31,12 @@ const About = () => {
           </p>
         </div>
         <div className="w-full sm:h-screen relative flex items-center justify-center rounded-full  bg-circularSmLight dark:bg-circularSmDark  xl:bg-circularLight xl:dark:bg-circularDark xl:bg-circulartLight py-20 mx-auto my-10 lg:my-24">
-          <motion.div className="flex items-center justify-center rounded-full font-extrabold sm:bg-white bg-transparent sm:text-black dark:text-white text-black  p-2 shadow-white cursor-pointer overflow-hidden max-w-xs">
+          <motion.div className="flex items-center justify-center rounded-full font-extrabold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black p-2 shadow-white cursor-pointer overflow-hidden max-w-xs">
             Web
           </motion.div>
 
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:py-3 sm:px-6 shadow-black cursor-pointer absolute"
+            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black sm:py-3 sm:px-6 shadow-black cursor-pointer absolute"
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: "-15vw", y: "7vw" }}
@@ -50,7 +50,7 @@ const About = () => {
             HTML
           </motion.div>
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black py-3 px-6 shadow-black cursor-pointer absolute"
+            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white sm:dark:text-black text-black py-3 px-6 shadow-black cursor-pointer absolute"
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: "-5vw", y: "-10vw" }}
@@ -66,7 +66,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black py-3 px-6 shadow-black cursor-pointer absolute"
+            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: "35vw", y: "0vw" }}
@@ -81,7 +81,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black py-3 px-6 shadow-black cursor-pointer absolute"
+            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: "-5vw", y: "20vw" }}
@@ -96,7 +96,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black py-3 px-6 shadow-black cursor-pointer absolute"
+            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: "-30vw", y: "-15vw" }}
@@ -111,7 +111,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black py-3 px-6 shadow-black cursor-pointer absolute"
+            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: "20vw", y: "-10vw" }}
@@ -126,7 +126,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black py-3 px-6 shadow-black cursor-pointer absolute"
+            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: "-32vw", y: "-5vw" }}
@@ -141,7 +141,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black py-3 px-6 shadow-black cursor-pointer absolute"
+            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: "0vw", y: "-20vw" }}
@@ -156,7 +156,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black py-3 px-6 shadow-black cursor-pointer absolute"
+            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: "20vw", y: "7vw" }}
@@ -171,7 +171,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black py-3 px-6 shadow-black cursor-pointer absolute"
+            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: "18vw", y: "18vw" }}
@@ -185,7 +185,7 @@ const About = () => {
             GitHub
           </motion.div>
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black py-3 px-6 shadow-black cursor-pointer absolute"
+            className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
             whileHover={{ scale: 1.05 }}
             initial={{ x: 0, y: 0 }}
             whileInView={{ x: "-30vw", y: "15vw" }}
