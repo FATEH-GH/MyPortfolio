@@ -57,8 +57,7 @@ const EmailSection = () => {
         <p className="text-black dark:text-[#ADB7BE] mb-4 max-w-md font-montserrat font-bold">
           {" "}
           I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+          open. Whether you have a question or just want to say hi.
         </p>
       </div>
       <div>
