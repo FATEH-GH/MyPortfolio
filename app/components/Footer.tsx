@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { Icons } from "./Icons";
 
 const Footer = () => {
   return (
@@ -9,11 +9,11 @@ const Footer = () => {
           <div className="flex items-center gap-4">
             <Link
               href="/"
-              className="font-montserrat font-extrabold lg:p-4 p-2 lg:max-w-[60px] max-w-[60px] text-lg sm:text-lg lg:text-xl  rounded-full bg-slate-500 text-white hover:bg-slate-400"
+              className="font-montserrat font-extrabold lg:p-4 p-2 lg:max-w-[60px] max-w-[60px] text-lg sm:text-lg lg:text-xl  rounded-full bg-slate-500 text-black dark:text-slate-200 hover:bg-slate-400"
             >
-              F&nbsp;G
+              FG
             </Link>
-            <p className="font-montserrat text-[16px] sm:text-lg xl:text-xl text-white">
+            <p className="text-[16px] sm:text-lg xl:text-xl font-bold text-white transition duration-300">
               ABDENNOUR FATEH GHRIBI
             </p>
           </div>
@@ -24,25 +24,15 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col items-center justify-center gap-4 mb-4">
-          <h3 className="font-montserrat font-extrabold text-xl  sm:text-lg lg:text-xl xl:text-3xl mb-6 text-white">
+          <h3 className="font-montserrat font-extrabold text-xl  sm:text-lg lg:text-xl xl:text-3xl  text-white">
             Social
           </h3>
           <div className="flex gap-4">
             <Link href="github.com">
-              <Image
-                src="/GitHubIcon.svg"
-                alt="Github Icon"
-                height={50}
-                width={50}
-              />
+              <Icons.gitHub className="h-10 w-10 text-white" />
             </Link>
             <Link href="linkedin.com">
-              <Image
-                src="/LinkedIn.svg"
-                alt="Linkedin Icon"
-                height={50}
-                width={50}
-              />
+              <Icons.linkedIn className="h-10 w-10 text-white" />
             </Link>
           </div>
         </div>

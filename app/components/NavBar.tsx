@@ -5,6 +5,15 @@ import { useState } from "react";
 import Overlaymenu from "./Overlaymenu";
 import DarkModeCard from "./DarkModeCard";
 
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/app/components/ui/sheet";
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -17,36 +26,33 @@ const NavBar = () => {
           >
             FG
           </Link>
-          <p className="  text-[16px] sm:text-lg xl:text-xl dark:text-slate-200 font-bold text-black transition duration-300">
+          <p className="text-[16px] sm:text-lg xl:text-xl dark:text-slate-200 font-bold text-black transition duration-300">
             ABDENNOUR FATEH GHRIBI
           </p>
         </div>
 
-        {isOpen && <Overlaymenu />}
-
-        <button
-          onClick={() => setIsOpen((prev) => !prev)}
-          className="flex flex-col justify-center items-center sm:hidden"
-        >
-          <span
-            className={`bg-black dark:bg-slate-200  block transition-all duration-300 ease-out 
-                    h-0.5 w-6 rounded-sm ${
-                      isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
-                    }`}
-          ></span>
-          <span
-            className={`bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
-                    h-0.5 w-6 rounded-sm my-0.5 ${
-                      isOpen ? "opacity-0" : "opacity-100"
-                    }`}
-          ></span>
-          <span
-            className={`bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
-                    h-0.5 w-6 rounded-sm ${
-                      isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
-                    }`}
-          ></span>
-        </button>
+        <Sheet>
+          <SheetTrigger>
+            <button className="flex flex-col gap-0.5 justify-center items-center sm:hidden">
+              <span
+                className="bg-black dark:bg-slate-200  block transition-all duration-300 ease-out 
+                      h-0.5 w-6 rounded-sm "
+              ></span>
+              <span
+                className="bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
+                    h-0.5 w-6 rounded-sm my-0.5 "
+              ></span>
+              <span
+                className="bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
+                    h-0.5 w-6 rounded-sm "
+              ></span>
+            </button>
+          </SheetTrigger>
+          <SheetContent>
+            {" "}
+            <Overlaymenu />
+          </SheetContent>
+        </Sheet>
 
         <nav className="max-sm:hidden  text-xl font-bold flex gap-20  mr-40 text-black dark:text-slate-200 transition duration-300">
           <Link

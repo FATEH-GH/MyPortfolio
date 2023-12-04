@@ -1,10 +1,49 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
-import Link from "next/link";
-import Image from "next/image";
-
+/*function onSubmit(data: FormData, e: React.FormEvent<HTMLFormElement>) {
+  e.preventDefault();
+  console.log("email sent");
+  sendEmail(data);
+}
+*/
 const EmailSection = () => {
+  const form: any = useRef();
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [sent, setSent] = useState(false);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    setSent(true);
+    console.log(sent);
+    e.preventDefault();
+    setEmail("");
+    setSubject("");
+    setMessage("");
+    setTimeout(() => {
+      setSent(false);
+    }, 3000);
+
+    console.log(sent);
+
+    /*emailjs
+      .sendForm(
+        "service_7otompv",
+        "template_pog5dki",
+        form.current,
+        "ul3BSjgVkcZLFrefl"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );*/
+  };
   return (
     <section
       id="contact"
@@ -23,7 +62,7 @@ const EmailSection = () => {
         </p>
       </div>
       <div>
-        <form className="flex flex-col">
+        <form className="flex flex-col" ref={form} onSubmit={sendEmail}>
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -32,9 +71,12 @@ const EmailSection = () => {
               Your email
             </label>
             <input
-              name="email"
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+              value={email}
               type="email"
-              id="email"
+              name="to_name"
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="jacob@google.com"
@@ -48,10 +90,12 @@ const EmailSection = () => {
               Subject
             </label>
             <input
-              name="subject"
+              onChange={(e) => {
+                setSubject(e.target.value);
+              }}
+              value={subject}
               type="text"
-              id="subject"
-              required
+              name="from_name"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Just saying hi"
             />
@@ -64,19 +108,26 @@ const EmailSection = () => {
               Message
             </label>
             <textarea
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
+              value={message}
               name="message"
-              id="message"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Let's talk about..."
             />
           </div>
-          <button
-            type="submit"
-            className="bg-slate-700 hover:bg-slate-500 text-white font-bold py-2.5 px-5 rounded-lg w-full"
-          >
+          <button className="bg-slate-700 hover:bg-slate-500 text-white font-bold py-2.5 px-5 rounded-lg w-full">
             Send Message
           </button>
         </form>
+        <div
+          className={` relative flex items-center justify-center mt-4 text-lg font-semibold text-green-500 transition  ${
+            sent ? "opacity-100 duration-500" : "opacity-0"
+          }`}
+        >
+          Email sent, thanks.
+        </div>
       </div>
     </section>
   );

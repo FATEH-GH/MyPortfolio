@@ -48,13 +48,12 @@ const DarkModeCard = () => {
         viewBox="0 0 24 24"
         fill="none"
         stroke="black"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         style={{ ...svgContainerProps, cursor: "pointer" }}
         onClick={() => {
           theme == "dark" ? setTheme("light") : setTheme("dark");
-          console.log(theme);
         }}
       >
         <mask id="mask">
@@ -76,7 +75,7 @@ const DarkModeCard = () => {
           mask="url(#mask)"
         />
 
-        <animated.g style={linesProps} fill="currentColor">
+        <animated.g style={linesProps} fill="black">
           <line x1="12" y1="1" x2="12" y2="3" />
           <line x1="12" y1="21" x2="12" y2="23" />
           <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />

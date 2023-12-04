@@ -48,16 +48,6 @@ const ProjectCard = () => {
           />
 
           <ImageMotion
-            src="/project-1-2.png"
-            alt="project image"
-            height={100}
-            width={100}
-            className="absolute left-0 top-10 shadow-2xl rounded-2xl"
-            initial={{ rotate: 0, x: -200, y: 100 }}
-            variants={variants}
-            animate={onView ? "open" : ""}
-          />
-          <ImageMotion
             src="/project-1-1.png"
             alt="project image"
             height={100}
@@ -65,6 +55,17 @@ const ProjectCard = () => {
             className="absolute right-0 top-10 shadow-2xl rounded-2xl"
             initial={{ rotate: 0, x: 200, y: -100 }}
             variants={variants2}
+            animate={onView ? "open" : ""}
+          />
+
+          <ImageMotion
+            src="/project-1-2.png"
+            alt="project image"
+            height={100}
+            width={100}
+            className="absolute left-0 top-10 shadow-2xl rounded-2xl"
+            initial={{ rotate: 0, x: -200, y: 100 }}
+            variants={variants}
             animate={onView ? "open" : ""}
           />
         </div>
@@ -77,7 +78,7 @@ const ProjectCard = () => {
           </p>
           <LinkMotion
             href="https://adidas-gamma.vercel.app/"
-            className="bg-slate-700 hover:bg-slate-500 flex items-center justify-center p-2 sm:p-4 group gap-4 w-40 rounded-full mx-auto"
+            className="bg-slate-700 hover:bg-slate-500 flex items-center justify-center p-2 sm:p-4 group gap-4 w-40 rounded-full mx-auto group"
             target="_blank"
           >
             <p className="font-bold text-white">Preview</p>
@@ -86,6 +87,7 @@ const ProjectCard = () => {
               alt="right icon"
               height={24}
               width={24}
+              className="group-hover:translate-x-3 duration-300"
             />
           </LinkMotion>
         </motion.div>
@@ -129,7 +131,7 @@ const ProjectCard = () => {
           </p>
           <Link
             href="https://travel-sigma-fawn.vercel.app/ "
-            className="bg-slate-700 hover:bg-slate-500 flex items-center justify-center p-2 sm:p-4 group gap-4 w-40 rounded-full mx-auto"
+            className="bg-slate-700 hover:bg-slate-500 flex items-center justify-center p-2 sm:p-4 group gap-4 w-40 rounded-full mx-auto group"
             target="_blank"
           >
             <p className="font-bold text-white">Preview</p>
@@ -139,6 +141,7 @@ const ProjectCard = () => {
               height={24}
               width={24}
               style={{ color: "white" }}
+              className="group-hover:translate-x-3 duration-300"
             />
           </Link>
         </motion.div>
