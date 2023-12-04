@@ -9,7 +9,7 @@ const About = () => {
           About Me
         </h3>
         <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300  max-w-[100px] flex justify-center m-auto mb-6 sm:mb-12" />
-        <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-bold text-base px-2 sm:text-lg mb-6 lg:text-xl text-center lg:max-w-lg mx-auto">
+        <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-bold text-base px-2 sm:text-lg mb-6 lg:text-xl text-center lg:max-w-xl mx-auto">
           Here you will find more information about me, what I do, and my
           current skills mostly in terms of programming and technology
         </p>
@@ -20,7 +20,7 @@ const About = () => {
             Get to know me
           </h3>
           <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300 max-w-[100px] flex justify-center m-auto mb-6 sm:mb-12 " />
-          <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-bold px-2 sm:text-lg mb-6 lg:text-xl lg:max-w-[700px]  mx-auto text-center">
+          <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-bold px-2 sm:text-lg mb-6 lg:text-xl lg:max-w-[800px]  mx-auto text-center ">
             I&apos;m a Frontend Web Developer building the Front-end of Websites
             and Web Applications that leads to the success of the overall
             product. Check out some of my work in the Projects section.

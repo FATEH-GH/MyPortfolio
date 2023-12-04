@@ -12,7 +12,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/app/components/ui/sheet";
+} from "@/components/ui/sheet";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
