@@ -28,7 +28,7 @@ const EmailSection = () => {
 
     console.log(sent);
 
-    /*emailjs
+    emailjs
       .sendForm(
         "service_7otompv",
         "template_pog5dki",
@@ -42,7 +42,7 @@ const EmailSection = () => {
         (error) => {
           console.log(error.text);
         }
-      );*/
+      );
   };
   return (
     <section
