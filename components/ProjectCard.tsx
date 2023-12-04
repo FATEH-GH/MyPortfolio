@@ -72,9 +72,10 @@ const ProjectCard = () => {
         <motion.div className="max-w-xl mx-4  text-black dark:text-[#ADB7BE]  transition duration-300 ">
           <h3 className="font-extrabold text-xl">Hilink</h3>
           <p className="my-3 font-bold font-montserrat">
-            Only with the hilink application you will no longer get lost,
-            because we already support offline maps when there is no internet
-            connection in the field, i helped designing the website.
+            Discover stylish Adidas arrivals, quality confort, and innovation
+            for your active life. A nodern adidas landing page that i chose to
+            remake, which is responsive across all devices (tablets, laptops,
+            mobile...) hope you like it :) .
           </p>
           <LinkMotion
             href="https://adidas-gamma.vercel.app/"
