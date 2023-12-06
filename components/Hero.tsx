@@ -47,7 +47,7 @@ const Hero = () => {
           </Link>
           <Link
             target="_blank"
-            href="/dummy.pdf"
+            href="/GHRIBI Fateh Abdennour.pdf"
             className="rounded-full bg-slate-700 hover:bg-slate-500 text-white mx-4 p-2 font-bold "
           >
             Download CV
