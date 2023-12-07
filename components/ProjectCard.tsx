@@ -70,7 +70,7 @@ const ProjectCard = () => {
           />
         </div>
         <motion.div className="max-w-xl mx-4  text-black dark:text-[#ADB7BE]  transition duration-300 ">
-          <h3 className="font-extrabold text-xl">Hilink</h3>
+          <h3 className="font-extrabold text-xl">Adidas</h3>
           <p className="my-3 font-bold font-montserrat">
             Discover stylish Adidas arrivals, quality confort, and innovation
             for your active life. A nodern adidas landing page that i chose to
