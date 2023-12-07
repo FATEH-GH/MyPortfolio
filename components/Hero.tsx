@@ -14,7 +14,7 @@ const Hero = () => {
         transition={{ duration: 1, ease: "circInOut" }}
         className=" mx-auto lg:pt-14"
       >
-        <h1 className="text-black dark:text-white transiton duration-300 mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+        <h1 className="ml-4 text-black dark:text-white transiton duration-300 mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
           <span className=" bg-clip-text text-black dark:text-white transiton duration-300">
             Hello, I&apos;m{" "}
           </span>
@@ -34,7 +34,7 @@ const Hero = () => {
             className="relative z-0"
           />
         </h1>
-        <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-bold px-2 sm:text-lg mb-6 lg:text-xl max-w-2xl">
+        <p className="ml-4 text-black dark:text-[#ADB7BE] transiton duration-300 font-bold px-2 sm:text-lg mb-6 lg:text-xl max-w-2xl">
           A Frontend focused Web Developer building the Frontend of Websites and
           Web Applications that leads to the success of the overall product.
         </p>
