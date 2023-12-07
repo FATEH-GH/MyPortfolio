@@ -39,8 +39,8 @@ const ProjectCard = () => {
       className=" flex flex-col lg:flex-row gap-10 sm:gap-20 mx-auto my-20 "
       ref={ref}
     >
-      {projects.map((project, index) => (
-        <div className="flex flex-col gap-10" id={project.title}>
+      {projects.map((project) => (
+        <div className="flex flex-col gap-10" key={project.title}>
           <div className="flex relative rounded-3xl border-4 border-blue-100 overflow-hidden hover:border-blue-300 ">
             <ImageMotion
               src={project.mainProject}
