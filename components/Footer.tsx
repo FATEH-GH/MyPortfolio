@@ -28,10 +28,16 @@ const Footer = () => {
             Social
           </h3>
           <div className="flex gap-4">
-            <Link href="github.com">
+            <Link
+              href="https://github.com/FATEH-GH"
+              className="hover:opacity-70"
+            >
               <Icons.gitHub className="h-10 w-10 text-white" />
             </Link>
-            <Link href="linkedin.com">
+            <Link
+              href="https://www.linkedin.com/in/fateh-ghribi/"
+              className="hover:opacity-70"
+            >
               <Icons.linkedIn className="h-10 w-10 text-white" />
             </Link>
           </div>

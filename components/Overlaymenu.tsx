@@ -49,11 +49,11 @@ const Overlaymenu = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.75 }}
       >
-        <Link href="github.com">
+        <Link href="https://github.com/FATEH-GH">
           <Icons.gitHub className="h-8 w-8" />
         </Link>
 
-        <Link href="linkedin.com">
+        <Link href="https://www.linkedin.com/in/fateh-ghribi/">
           <Icons.linkedIn className="h-8 w-8" />
         </Link>
         <DarkModeCard />
