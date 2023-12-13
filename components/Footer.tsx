@@ -18,9 +18,9 @@ const Footer = () => {
             </p>
           </div>
           <p className="text-[#ADB7BE] text-base px-2 sm:text-lg mb-6  max-w-lg">
-            A Frontend focused Web Developer building the Frontend of Websites
-            and Web Applications that leads to the success of the overall
-            product
+            A Frontend Web Developer that specialize in creating intuitive user
+            interfaces and visually appealing to improve overall user
+            experience.
           </p>
         </div>
         <div className="flex flex-col items-center justify-center gap-4 mb-4">
