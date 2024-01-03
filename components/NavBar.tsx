@@ -31,7 +31,7 @@ const NavBar = () => {
 
         <Sheet>
           <SheetTrigger>
-            <button className="flex flex-col gap-0.5 justify-center items-center lg:hidden">
+            <div className="flex flex-col gap-0.5 justify-center items-center lg:hidden cursor-pointer">
               <span
                 className="bg-black dark:bg-slate-200  block transition-all duration-300 ease-out 
                       h-0.5 w-6 rounded-sm "
@@ -44,7 +44,7 @@ const NavBar = () => {
                 className="bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
                     h-0.5 w-6 rounded-sm "
               ></span>
-            </button>
+            </div>
           </SheetTrigger>
           <SheetContent className="dark:bg-slate-900 bg-slate-300">
             {" "}

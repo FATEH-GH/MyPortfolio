@@ -36,12 +36,12 @@ const ProjectCard = () => {
   };
   return (
     <motion.div
-      className=" flex flex-col lg:flex-row gap-10 sm:gap-20 mx-auto my-20 "
+      className=" grid grid-cols-1 md:grid-cols-2 grid-flow-row items-center  gap-10 sm:gap-20 mx-auto my-20 "
       ref={ref}
     >
       {projects.map((project) => (
-        <div className="flex flex-col gap-10" key={project.title}>
-          <div className="flex relative rounded-3xl border-4 border-blue-100 overflow-hidden hover:border-blue-300 ">
+        <div className="flex flex-col items-center gap-10" key={project.title}>
+          <div className="flex relative rounded-3xl border-4 border-blue-100 overflow-hidden hover:scale-105 duration-200 hover:border-blue-300 ">
             <ImageMotion
               src={project.mainProject}
               alt="project image"
@@ -54,7 +54,7 @@ const ProjectCard = () => {
               alt="project image"
               height={100}
               width={100}
-              className="absolute right-0 top-10 shadow-2xl rounded-2xl"
+              className="absolute right-0 top-10 shadow-2xl rounded-2xl group-hover:rotate-12"
               initial={{ rotate: 0, x: 200, y: -100 }}
               variants={variants2}
               animate={onView ? "open" : ""}
