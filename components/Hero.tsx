@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="lg:py-4 flex flex-col gap-10 lg:flex-row lg:justify-evenly lg:mb-52 ">
+    <section className="lg:py-4 flex flex-col gap-10 lg:flex-row lg:justify-evenly min-h-screen ">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
@@ -58,14 +58,14 @@ const Hero = () => {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "circInOut" }}
-        className="flex items-center justify-center mx-auto"
+        className="flex items-start justify-start mx-auto"
       >
         <Image
           src="/Hero.png"
           alt="hero image"
-          className="pt-4"
-          width={400}
-          height={400}
+          // className="pt-4"
+          width={500}
+          height={500}
         />
       </motion.div>
     </section>

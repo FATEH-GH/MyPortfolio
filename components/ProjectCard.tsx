@@ -54,7 +54,7 @@ const ProjectCard = () => {
               alt="project image"
               height={100}
               width={100}
-              className="absolute right-0 top-10 shadow-2xl rounded-2xl group-hover:rotate-12"
+              className="absolute right-0 top-10 shadow-2xl rounded-2xl hover:rotate-12"
               initial={{ rotate: 0, x: 200, y: -100 }}
               variants={variants2}
               animate={onView ? "open" : ""}

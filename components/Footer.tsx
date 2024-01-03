@@ -46,7 +46,7 @@ const Footer = () => {
       <div className="mt-1 h-1 bg-white  flex justify-center mx-10 mb-6 sm:mb-12" />
       <div className="mb-4">
         <p className="text-white text-xs sm:text-sm text-center">
-          &copy; Copyright 2023. Made by{" "}
+          &copy; Copyright 2024. Made by{" "}
           <Link href="/" className="font-bold">
             ABDENNOUR FATEH GHRIBI
           </Link>
