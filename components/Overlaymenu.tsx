@@ -12,10 +12,9 @@ const Overlaymenu = () => {
         <MotionLink
           href="#Aboutme"
           className="dark:text-white text-black  transition-colors   py-2 px-1"
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.75 }}
+          initial={{ opacity: 0, y: 35 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           About
         </MotionLink>
@@ -23,10 +22,9 @@ const Overlaymenu = () => {
         <MotionLink
           href="#Projects"
           className=" dark:text-white text-black  transition-colors  py-2 px-1"
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.75 }}
+          initial={{ opacity: 0, y: 35 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.65, ease: "easeInOut" }}
         >
           Projects
         </MotionLink>
@@ -34,20 +32,18 @@ const Overlaymenu = () => {
         <MotionLink
           href="#contact"
           className="dark:text-white text-black  transition-colors  py-2 px-1"
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.75 }}
+          initial={{ opacity: 0, y: 35 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.75, ease: "easeInOut" }}
         >
           Contact
         </MotionLink>
       </nav>
       <motion.div
         className="absolute z-10 top-[30%] left-20 flex items-center justify-center flex-row gap-10 "
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.75 }}
+        initial={{ opacity: 0, y: 35 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.85, ease: "easeInOut" }}
       >
         <Link href="https://github.com/FATEH-GH">
           <Icons.gitHub className="h-8 w-8" />
