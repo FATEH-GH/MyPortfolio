@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="lg:py-4 flex flex-col gap-10 lg:flex-row lg:justify-evenly min-h-screen ">
+    <section className="lg:py-4 flex flex-col gap-10 lg:flex-row lg:justify-evenly min-h-screen my-10 ">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}

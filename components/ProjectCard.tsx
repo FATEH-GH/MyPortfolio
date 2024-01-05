@@ -1,3 +1,5 @@
+"use client";
+
 import { projects } from "@/constants";
 import { motion } from "framer-motion";
 import Image from "next/image";
