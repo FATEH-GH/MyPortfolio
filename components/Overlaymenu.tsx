@@ -7,8 +7,8 @@ const Overlaymenu = () => {
   const MotionLink = motion(Link);
 
   return (
-    <div>
-      <motion.nav className=" absolute z-10 top-10 left-0  opacity-80 text-lg font-bold  flex flex-col gap-4  text-center w-full ">
+    <>
+      <nav className=" absolute z-10 top-10 left-0  opacity-80 text-lg font-bold  flex flex-col gap-4  text-center w-full ">
         <MotionLink
           href="#Aboutme"
           className="dark:text-white text-black  transition-colors   py-2 px-1"
@@ -38,7 +38,7 @@ const Overlaymenu = () => {
         >
           Contact
         </MotionLink>
-      </motion.nav>
+      </nav>
       <motion.div
         className="absolute z-10 top-[30%] left-20 flex items-center justify-center flex-row gap-10 "
         initial={{ opacity: 0, y: 35 }}
@@ -54,7 +54,7 @@ const Overlaymenu = () => {
         </Link>
         <DarkModeCard />
       </motion.div>
-    </div>
+    </>
   );
 };
 

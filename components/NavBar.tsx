@@ -30,7 +30,7 @@ const NavBar = () => {
         </div>
 
         <Sheet>
-          <SheetTrigger>
+          <SheetTrigger asChild>
             <div className="flex flex-col gap-0.5 justify-center items-center lg:hidden cursor-pointer">
               <span
                 className="bg-black dark:bg-slate-200  block transition-all duration-300 ease-out 
