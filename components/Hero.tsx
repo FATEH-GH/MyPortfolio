@@ -14,7 +14,7 @@ const Hero = () => {
         transition={{ duration: 1, ease: "circInOut" }}
         className=" mx-auto lg:pt-14"
       >
-        <h1 className="ml-4 text-black dark:text-white transiton duration-300 mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+        <h1 className="ml-4 text-black dark:text-white transiton duration-300 mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold ">
           <span className=" bg-clip-text text-black dark:text-white transiton duration-300">
             Hello, I&apos;m{" "}
           </span>
@@ -63,7 +63,7 @@ const Hero = () => {
         <Image
           src="/Hero.png"
           alt="hero image"
-          // className="pt-4"
+          className="z-10"
           width={500}
           height={500}
         />

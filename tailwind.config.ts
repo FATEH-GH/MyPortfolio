@@ -18,7 +18,7 @@ const config: Config = {
         circularSmDark:
           "repeating-radial-gradient(#e2e8f0 2px, #121212 5px, #121212 50px)",
         circularLight:
-          "repeating-radial-gradient(#121212 2px, #e2e8f0 5px, #e2e8f0 100px)",
+          "repeating-radial-gradient(#e2e8f0 2px, #ooFFFFFF 5px, #ooFFFFFF 100px)",
         circularDark:
           "repeating-radial-gradient(#e2e8f0 2px, #121212 5px, #121212 100px)",
       },
