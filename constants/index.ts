@@ -18,6 +18,15 @@ export const projects = [
       "Discover stylish Adidas arrivals, quality confort, and innovation for your active life. A nodern adidas landing page that i chose to remake, which is responsive across all devices (tablets, laptops, mobile...) hope you like it :) .",
   },
   {
+    mainProject: "/bg-project-5.png",
+    subProject1: "/project-5-1.png",
+    subProject2: "/project-5-2.png",
+    title: "Dropbox2.0",
+    link: "https://dropbox-zeta.vercel.app/",
+    describtion:
+      "Dropbox has proven to be extremely useful for social networks, so i tried to make a clone. Feel free to test it your self you can sign up to have the the full user experience (your data will be deleted as soon as you sign out) enjoy :P.",
+  },
+  {
     mainProject: "/bg-project-4.png",
     subProject1: "/project-4-1.png",
     subProject2: "/project-4-1.png",
