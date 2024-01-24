@@ -31,7 +31,7 @@ const Star = ({ p }: { p: number }) => {
 
   return (
     <mesh ref={ref}>
-      <boxGeometry args={[0.05, 0.05, 0.05]} />
+      <boxGeometry args={[0.08, 0.08, 0.08]} />
       <meshBasicMaterial wireframe color={color} />
     </mesh>
   );
