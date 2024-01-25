@@ -1,11 +1,8 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { DivMotion } from "./FramerMotion";
 const About = () => {
   return (
     <section id="Aboutme" className="font-montserrat text-white my-16">
-      <motion.div
+      <DivMotion
         className="flex items-center justify-start"
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1, ease: "easeIn" }}
@@ -21,8 +18,8 @@ const About = () => {
             current skills mostly in terms of programming and technology
           </p>
         </div>
-      </motion.div>
-      <motion.div
+      </DivMotion>
+      <DivMotion
         className="flex items-end justify-end"
         initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -43,13 +40,13 @@ const About = () => {
             experience then don&apos;t hesitate to contact me.
           </p>
         </div>
-      </motion.div>
+      </DivMotion>
       <div className="w-full sm:h-screen relative flex items-center justify-center rounded-full  bg-circularSmLight dark:bg-circularSmDark  xl:bg-circularLight xl:dark:bg-circularDark xl:bg-circulartLight py-20 mx-auto my-10 lg:my-24 -z-20">
-        <motion.div className="flex items-center justify-center rounded-full font-extrabold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black p-2 shadow-white cursor-pointer overflow-hidden max-w-xs">
+        <DivMotion className="flex items-center justify-center rounded-full font-extrabold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black p-2 shadow-white cursor-pointer overflow-hidden max-w-xs">
           Web
-        </motion.div>
+        </DivMotion>
 
-        <motion.div
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black sm:py-3 sm:px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -62,8 +59,8 @@ const About = () => {
           }}
         >
           HTML
-        </motion.div>
-        <motion.div
+        </DivMotion>
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white sm:dark:text-black text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -77,9 +74,9 @@ const About = () => {
           }}
         >
           CSS
-        </motion.div>
+        </DivMotion>
 
-        <motion.div
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -92,9 +89,9 @@ const About = () => {
           }}
         >
           JavaScript
-        </motion.div>
+        </DivMotion>
 
-        <motion.div
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -107,9 +104,9 @@ const About = () => {
           }}
         >
           tailwind CSS
-        </motion.div>
+        </DivMotion>
 
-        <motion.div
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -122,9 +119,9 @@ const About = () => {
           }}
         >
           NextJS
-        </motion.div>
+        </DivMotion>
 
-        <motion.div
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -137,9 +134,9 @@ const About = () => {
           }}
         >
           ReactJS
-        </motion.div>
+        </DivMotion>
 
-        <motion.div
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -152,9 +149,9 @@ const About = () => {
           }}
         >
           Express Basics
-        </motion.div>
+        </DivMotion>
 
-        <motion.div
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -167,9 +164,9 @@ const About = () => {
           }}
         >
           SQL Basics
-        </motion.div>
+        </DivMotion>
 
-        <motion.div
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -182,9 +179,9 @@ const About = () => {
           }}
         >
           Responsive Design
-        </motion.div>
+        </DivMotion>
 
-        <motion.div
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -197,8 +194,8 @@ const About = () => {
           }}
         >
           GitHub
-        </motion.div>
-        <motion.div
+        </DivMotion>
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -211,8 +208,8 @@ const About = () => {
           }}
         >
           Framer Motion
-        </motion.div>
-        <motion.div
+        </DivMotion>
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -225,9 +222,9 @@ const About = () => {
           }}
         >
           Docker
-        </motion.div>
+        </DivMotion>
 
-        <motion.div
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -240,8 +237,8 @@ const About = () => {
           }}
         >
           Supabase
-        </motion.div>
-        <motion.div
+        </DivMotion>
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -254,8 +251,8 @@ const About = () => {
           }}
         >
           Rest Api
-        </motion.div>
-        <motion.div
+        </DivMotion>
+        <DivMotion
           className="flex items-center justify-center rounded-full font-semibold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black py-3 px-6 shadow-black cursor-pointer absolute"
           whileHover={{ scale: 1.05 }}
           initial={{ x: 0, y: 0 }}
@@ -268,7 +265,7 @@ const About = () => {
           }}
         >
           Firebase
-        </motion.div>
+        </DivMotion>
       </div>
     </section>
   );

@@ -1,14 +1,13 @@
 "use client";
-import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { motion } from "framer-motion";
 import Link from "next/link";
+import { DivMotion } from "./FramerMotion";
 
 const Hero = () => {
   return (
     <section className="lg:py-4 flex flex-col gap-10 lg:flex-row lg:justify-evenly min-h-screen my-10 ">
-      <motion.div
+      <DivMotion
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "circInOut" }}
@@ -53,8 +52,8 @@ const Hero = () => {
             Download CV
           </Link>
         </div>
-      </motion.div>
-      <motion.div
+      </DivMotion>
+      <DivMotion
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "circInOut" }}
@@ -67,7 +66,7 @@ const Hero = () => {
           width={500}
           height={500}
         />
-      </motion.div>
+      </DivMotion>
     </section>
   );
 };
