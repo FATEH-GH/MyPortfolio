@@ -37,7 +37,7 @@ const Star = ({ p }: { p: number }) => {
   );
 };
 
-function Scene({ numStars = 100 }) {
+function Scene({ numStars = 75 }) {
   const gl = useThree((state) => state.gl);
   const { scrollYProgress } = useScroll();
   const yAngle = useTransform(
