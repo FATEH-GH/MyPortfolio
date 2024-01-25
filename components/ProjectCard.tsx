@@ -1,50 +1,15 @@
-"use client";
-
 import { projects } from "@/constants";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import { ImageMotion } from "./FramerMotion";
 
 const ProjectCard = () => {
-  const [onView, setOnView] = useState(false);
-
-  const ImageMotion = motion(Image);
-  const LinkMotion = motion(Link);
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      setOnView(true);
-    }
-  }, [inView]);
-
-  const variants = {
-    open: {
-      rotate: 30,
-      x: 0,
-      y: 0,
-      transition: { duration: 1 },
-    },
-  };
-  const variants2 = {
-    open: {
-      rotate: -30,
-      x: 0,
-      y: 0,
-      transition: { duration: 1 },
-    },
-  };
   return (
-    <motion.div
-      className=" grid grid-cols-1 md:grid-cols-2 grid-flow-row items-center  gap-10 sm:gap-20 mx-auto my-20 "
-      ref={ref}
-    >
+    <div className=" grid grid-cols-1 md:grid-cols-2 grid-flow-row items-center  gap-10 sm:gap-20 mx-auto my-20 ">
       {projects.map((project) => (
         <div className="flex flex-col items-center gap-10" key={project.title}>
           <div className="flex relative rounded-3xl border-4 border-blue-100 overflow-hidden hover:scale-105 duration-200 hover:border-blue-300 ">
-            <ImageMotion
+            <Image
               src={project.mainProject}
               alt="project image"
               height={600}
@@ -57,9 +22,9 @@ const ProjectCard = () => {
               height={100}
               width={100}
               className="absolute right-0 top-10 shadow-2xl rounded-2xl hover:rotate-12"
-              initial={{ rotate: 0, x: 200, y: -100 }}
-              variants={variants2}
-              animate={onView ? "open" : ""}
+              initial={{ rotate: 0, x: 100, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              whileInView={{ rotate: -30, x: 0, y: 0 }}
             />
 
             <ImageMotion
@@ -68,34 +33,34 @@ const ProjectCard = () => {
               height={100}
               width={100}
               className="absolute left-0 top-10 shadow-2xl rounded-2xl"
-              initial={{ rotate: 0, x: -200, y: 100 }}
-              variants={variants}
-              animate={onView ? "open" : ""}
+              initial={{ rotate: 0, x: -100, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              whileInView={{ rotate: 30, x: 0, y: 0 }}
             />
           </div>
-          <motion.div className="max-w-xl mx-4  text-black dark:text-[#ADB7BE]  transition duration-300 ">
+          <div className="max-w-xl mx-4  text-black dark:text-[#ADB7BE]  transition duration-300 ">
             <h3 className="font-extrabold text-xl"> {project.title} </h3>
             <p className="my-3 font-bold font-montserrat">
               {project.describtion}
             </p>
-            <LinkMotion
+            <Link
               href={project.link}
               className="bg-slate-700 hover:bg-slate-500 flex items-center justify-center p-2 sm:p-4 group gap-4 w-40 rounded-full mx-auto group"
               target="_blank"
             >
               <p className="font-bold text-white">Preview</p>
-              <ImageMotion
+              <Image
                 src="/RightIcon.svg"
                 alt="right icon"
                 height={24}
                 width={24}
                 className="group-hover:translate-x-3 duration-300"
               />
-            </LinkMotion>
-          </motion.div>
+            </Link>
+          </div>
         </div>
       ))}
-    </motion.div>
+    </div>
   );
 };
 
