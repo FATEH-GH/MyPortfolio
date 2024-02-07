@@ -26,15 +26,15 @@ export const projects = [
     describtion:
       "Dropbox has proven to be extremely useful for social networks, so i tried to make a clone. Feel free to test it your self you can sign up to have the the full user experience (your data will be deleted as soon as you sign out) enjoy :P.",
   },
-  {
-    mainProject: "/bg-project-4.png",
-    subProject1: "/project-4-1.png",
-    subProject2: "/project-4-1.png",
-    title: "ToDoList",
-    link: "https://todolist-eta-green.vercel.app/",
-    describtion:
-      "A minimilic website to make you check your daily objectives, with the intnetion to make you a better person in achieving your daily goals for a better improvement in your planing skills.",
-  },
+  // {
+  //   mainProject: "/bg-project-4.png",
+  //   subProject1: "/project-4-1.png",
+  //   subProject2: "/project-4-1.png",
+  //   title: "ToDoList",
+  //   link: "https://todolist-eta-green.vercel.app/",
+  //   describtion:
+  //     "A minimilic website to make you check your daily objectives, with the intnetion to make you a better person in achieving your daily goals for a better improvement in your planing skills.",
+  // },
   {
     mainProject: "/bg-project-2.png",
     subProject1: "/project-2-1.png",
