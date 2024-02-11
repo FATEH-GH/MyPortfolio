@@ -10,7 +10,7 @@ const Hero = () => {
       <DivMotion
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, ease: "circInOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className=" mx-auto lg:pt-14"
       >
         <h1 className="ml-4 text-black dark:text-white transiton duration-300 mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold ">
@@ -56,7 +56,7 @@ const Hero = () => {
       <DivMotion
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, ease: "circInOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className="flex items-start justify-start mx-auto"
       >
         <Image
