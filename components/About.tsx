@@ -3,12 +3,12 @@ const About = () => {
   return (
     <section id="Aboutme" className="font-montserrat text-white my-16">
       <DivMotion
-        className="flex items-center justify-start"
-        initial={{ opacity: 0, x: -100 }}
+        className="flex items-center justify-start mx-8"
+        initial={{ opacity: 0, x: -30 }}
         transition={{ duration: 1, ease: "easeIn" }}
         whileInView={{ opacity: 1, x: 0 }}
       >
-        <div className="my-10">
+        <div className="my-10 ">
           <h3 className=" flex text-black dark:text-[#ADB7BE] transition duration-300 justify-center text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
             About Me
           </h3>
@@ -20,8 +20,8 @@ const About = () => {
         </div>
       </DivMotion>
       <DivMotion
-        className="flex items-end justify-end"
-        initial={{ opacity: 0, x: 100 }}
+        className="flex items-end justify-end mx-8"
+        initial={{ opacity: 0, x: 30 }}
         transition={{ duration: 1, ease: "easeOut" }}
         whileInView={{ opacity: 1, x: 0 }}
       >
