@@ -1,44 +1,74 @@
+"use client";
+
+import Image from "next/image";
+import dog from "../public/dog.json";
 import { DivMotion } from "./FramerMotion";
 const About = () => {
   return (
     <section id="Aboutme" className="font-montserrat text-white my-36">
       <DivMotion
-        className="flex items-center justify-start mx-8"
+        className="flex items-center justify-center mx-8"
         initial={{ opacity: 0, x: -30 }}
         transition={{ duration: 1, ease: "easeIn" }}
         whileInView={{ opacity: 1, x: 0 }}
       >
-        <div className="my-10 ">
+        <div className="my-10  w-full ">
           <h3 className=" flex text-black dark:text-[#ADB7BE] transition duration-300 justify-center text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
             About Me
           </h3>
           <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300  max-w-[100px] flex justify-center m-auto mb-6 sm:mb-12" />
-          <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-extrabold text-base px-2 sm:text-lg mb-6 lg:text-xl text-center lg:max-w-xl mx-auto">
-            Here you will find more information about me, what I do, and my
-            current skills mostly in terms of programming and technology
-          </p>
+
+          <div className="flex flex-col gap-8 sm:flex-row justify-between items-center">
+            <Image
+              src="/aboutme.svg"
+              alt="just an image"
+              width={400}
+              height={500}
+            />
+            <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-extrabold  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-10">
+              Hi, my name is fateh and i am a front end developer from Algeria.
+              I am excited about creating stunning websites, my expertise lies
+              in translating desings into fully functional websites while
+              utilizing my developement skills to enhance and customize their
+              features. My end goal is to craft visually appealing user-friendly
+              websites that provide a seamless browsing experience.
+              <br />
+              In my leasure time i like to spend it either with my dogs (i have
+              two beautiful German Sheperd)🐕🐕 or watching car mods because i
+              like cars🚖.
+            </p>
+          </div>
         </div>
       </DivMotion>
       <DivMotion
-        className="flex items-end justify-end mx-8"
+        className="flex items-center justify-center mx-8"
         initial={{ opacity: 0, x: 30 }}
         transition={{ duration: 1, ease: "easeOut" }}
         whileInView={{ opacity: 1, x: 0 }}
       >
-        <div>
+        <div className=" my-10 w-full">
           <h3 className="flex text-black dark:text-[#ADB7BE]  transition duration-300 justify-center text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4">
             Get to know me
           </h3>
           <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300 max-w-[100px] flex justify-center m-auto mb-6 sm:mb-12 " />
-          <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-bold px-2 sm:text-lg mb-6 lg:text-xl lg:max-w-[800px]  mx-auto text-center ">
-            I&apos;m a Frontend Web Developer building the Front-end of Websites
-            and Web Applications that leads to the success of the overall
-            product. Check out some of my work in the Projects section.
-            <br />
-            I&apos;m open to Job opportunities where I can contribute, learn and
-            grow. If you have a good opportunity that matches my skills and
-            experience then don&apos;t hesitate to contact me.
-          </p>
+          <div className="flex flex-col gap-8 sm:flex-row justify-between items-center">
+            <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-bold px-2 sm:text-lg mb-6 lg:text-xl lg:max-w-[800px]">
+              I&apos;m a Frontend Web Developer building the Front-end of
+              Websites and Web Applications that leads to the success of the
+              overall product. Check out some of my work in the Projects
+              section.
+              <br />
+              I&apos;m open to Job opportunities where I can contribute, learn
+              and grow. If you have a good opportunity that matches my skills
+              and experience then don&apos;t hesitate to contact me.
+            </p>
+            <Image
+              src="/dog.svg"
+              alt="just an image"
+              width={400}
+              height={500}
+            />
+          </div>
         </div>
       </DivMotion>
       <div className="w-full sm:h-screen relative flex items-center justify-center rounded-full  bg-circularSmLight dark:bg-circularSmDark  xl:bg-circularLight xl:dark:bg-circularDark xl:bg-circulartLight py-20 mx-auto my-10 lg:my-24 -z-20">
