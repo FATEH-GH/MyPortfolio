@@ -6,7 +6,7 @@ import { DivMotion } from "./FramerMotion";
 
 const Hero = () => {
   return (
-    <section className="lg:py-4 flex flex-col gap-10 lg:flex-row lg:justify-evenly min-h-screen my-10 ">
+    <section className="lg:py-4 flex flex-col justify-center gap-10 lg:flex-row lg:justify-evenly  my-10 lg:my-28 ">
       <DivMotion
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}

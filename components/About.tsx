@@ -1,7 +1,7 @@
 import { DivMotion } from "./FramerMotion";
 const About = () => {
   return (
-    <section id="Aboutme" className="font-montserrat text-white my-16">
+    <section id="Aboutme" className="font-montserrat text-white my-36">
       <DivMotion
         className="flex items-center justify-start mx-8"
         initial={{ opacity: 0, x: -30 }}
