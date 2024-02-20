@@ -116,7 +116,7 @@ const EmailSection = () => {
               placeholder="Let's talk about..."
             />
           </div>
-          <button className="bg-slate-700 hover:bg-slate-500 text-white font-bold py-2.5 px-5 rounded-lg w-full">
+          <button className="bg-[#f0be6d] hover:bg-[#e9af51] text-white font-bold py-2.5 px-5 rounded-lg mx-auto">
             Send Message
           </button>
         </form>
