@@ -71,7 +71,14 @@ const About = () => {
           </div>
         </div>
       </DivMotion>
-      <div className="w-full sm:h-screen relative flex items-center justify-center rounded-full  bg-circularSmLight dark:bg-circularSmDark  xl:bg-circularLight xl:dark:bg-circularDark xl:bg-circulartLight py-20 mx-auto my-10 lg:my-24 -z-20">
+    </section>
+  );
+};
+
+export default About;
+
+{
+  /* <div className="w-full sm:h-screen relative flex items-center justify-center rounded-full  bg-circularSmLight dark:bg-circularSmDark  xl:bg-circularLight xl:dark:bg-circularDark xl:bg-circulartLight py-20 mx-auto my-10 lg:my-24 -z-20">
         <DivMotion className="flex items-center justify-center rounded-full font-extrabold sm:bg-white bg-transparent sm:text-black dark:text-white text-black sm:dark:text-black p-2 shadow-white cursor-pointer overflow-hidden max-w-xs">
           Web
         </DivMotion>
@@ -296,9 +303,5 @@ const About = () => {
         >
           Firebase
         </DivMotion>
-      </div>
-    </section>
-  );
-};
-
-export default About;
+      </div> */
+}
