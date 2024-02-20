@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="dark:bg-[#121212] bg-slate-200 transition duration-300">
+      <body className="dark:bg-[#35353b] bg-slate-200 transition duration-300">
         <Provider>
           <NavBar />
           {children}

@@ -13,7 +13,7 @@ const Hero = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className=" mx-auto lg:pt-14"
       >
-        <h1 className="ml-4 text-black dark:text-white transiton duration-300 mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold ">
+        <h1 className="ml-4 text-[#f0be6d] transiton duration-300 mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold ">
           <span className=" bg-clip-text text-black dark:text-white transiton duration-300">
             Hello, I&apos;m{" "}
           </span>
@@ -40,14 +40,14 @@ const Hero = () => {
         <div className="flex flex-col gap-4 sm:flex-row items-center  xl:mt-12">
           <Link
             href="#contact"
-            className="rounded-full bg-slate-700 hover:bg-slate-500 text-white mx-4 px-8 p-2 font-bold "
+            className="rounded-full bg-[#f0be6d] hover:bg-[#e9b157] text-black dark:text-white mx-4 px-8 p-2 font-bold transition duration-300"
           >
             Hire Me
           </Link>
           <Link
             target="_blank"
             href="/GHRIBI Fateh Abdennour.pdf"
-            className="rounded-full bg-slate-700 hover:bg-slate-500 text-white mx-4 p-2 font-bold "
+            className="rounded-full bg-[#f0be6d] hover:bg-[#e9b157] text-black dark:text-white mx-4 p-2 font-bold transition duration-3"
           >
             Download CV
           </Link>
