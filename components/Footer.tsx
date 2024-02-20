@@ -3,12 +3,12 @@ import { Icons } from "./Icons";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-800 p-4">
+    <footer className="bg-gradient-to-b from-slate-200 to-slate-400 dark:from-[#28282d] dark:to-[#101012] p-4 rounded-t-xl">
       <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-evenly">
         <div className="flex items-center gap-4">
           <Link
             href="/"
-            className="font-montserrat font-extrabold lg:p-4 p-2 lg:max-w-[60px] max-w-[60px] text-lg sm:text-lg lg:text-xl  rounded-full bg-slate-500 text-black dark:text-slate-200 hover:bg-slate-400"
+            className="font-montserrat font-extrabold lg:p-4 p-2 lg:max-w-[60px] max-w-[60px] text-lg sm:text-lg lg:text-xl  rounded-full bg-[#f0be6d] text-black dark:text-slate-200 "
           >
             FG
           </Link>
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-1 h-1 bg-white  flex justify-center mx-10 mb-6 " />
+      <div className="mt-1 h-1 bg-[#f0be6d]  flex justify-center mx-10 mb-6 " />
       <div className="">
         <p className="text-white text-xs sm:text-sm text-center">
           &copy; Copyright 2024. Made by{" "}
