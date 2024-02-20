@@ -20,7 +20,7 @@ const NavBar = () => {
         <div className="flex items-center gap-4">
           <Link
             href="/"
-            className="font-montserrat font-extrabold lg:p-4 p-2 lg:max-w-[60px] max-w-[60px] text-lg sm:text-lg lg:text-xl  rounded-full bg-slate-500 text-black dark:text-slate-200 hover:bg-slate-400"
+            className="font-montserrat font-extrabold lg:p-4 p-2 lg:max-w-[60px] max-w-[60px] text-lg sm:text-lg lg:text-xl  rounded-full bg-[#f0be6d] text-black dark:text-slate-200 "
           >
             FG
           </Link>
@@ -55,19 +55,19 @@ const NavBar = () => {
         <nav className="max-lg:hidden  text-xl font-bold flex gap-20  mr-40 text-black dark:text-slate-200 transition duration-300">
           <Link
             href="#Aboutme"
-            className="hover:text-slate-400 hover:scale-110 trasition-all duration-150"
+            className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
           >
             About
           </Link>
           <Link
             href="#Projects"
-            className="hover:text-slate-400 hover:scale-110 trasition-all duration-150"
+            className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
           >
             Projects
           </Link>
           <Link
             href="#contact"
-            className="hover:text-slate-400 hover:scale-110 trasition-all duration-150"
+            className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
           >
             Contact
           </Link>
