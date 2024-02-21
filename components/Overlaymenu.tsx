@@ -8,7 +8,7 @@ const Overlaymenu = () => {
 
   return (
     <>
-      <nav className=" absolute z-10 top-10 left-0  opacity-80 text-lg font-bold  flex flex-col gap-4  text-center w-full ">
+      <nav className=" absolute z-10 top-20 left-0  opacity-80 text-lg font-bold  flex flex-col gap-4  text-center w-full ">
         <MotionLink
           href="#Aboutme"
           className="dark:text-white text-black  transition-colors   py-2 px-1"
@@ -50,7 +50,7 @@ const Overlaymenu = () => {
         </MotionLink>
       </nav>
       <motion.div
-        className="absolute z-10 top-[30%] left-20 flex items-center justify-center flex-row gap-10 "
+        className="absolute z-10 top-[40%] left-20 flex items-center justify-center flex-row gap-10 "
         initial={{ opacity: 0, y: 35 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.85, ease: "easeInOut" }}

@@ -46,7 +46,7 @@ const NavBar = () => {
               ></span>
             </div>
           </SheetTrigger>
-          <SheetContent className="dark:bg-slate-900 bg-slate-300">
+          <SheetContent className="dark:bg-[#35353b]  bg-slate-300">
             {" "}
             <Overlaymenu />
           </SheetContent>
