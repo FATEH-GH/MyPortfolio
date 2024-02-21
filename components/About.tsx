@@ -3,14 +3,20 @@
 import Image from "next/image";
 import dog from "../public/dog.json";
 import { DivMotion } from "./FramerMotion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+
 const About = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section id="Aboutme" className="font-montserrat text-white my-36">
       <DivMotion
         className="flex items-center justify-center mx-8"
         initial={{ opacity: 0, x: -30 }}
         transition={{ duration: 1, ease: "easeIn" }}
-        whileInView={{ opacity: 1, x: 0 }}
+        animate={isInView ? { opacity: 1, x: 0 } : {}}
       >
         <div className="my-10  w-full ">
           <h3 className=" flex text-black dark:text-[#ADB7BE] transition duration-300 justify-center text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
@@ -41,10 +47,11 @@ const About = () => {
         </div>
       </DivMotion>
       <DivMotion
+        ref={ref}
         className="flex items-center justify-center mx-8"
         initial={{ opacity: 0, x: 30 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        whileInView={{ opacity: 1, x: 0 }}
+        animate={isInView ? { opacity: 1, x: 0 } : {}}
       >
         <div className=" my-10 w-full">
           <h3 className="flex text-black dark:text-[#ADB7BE]  transition duration-300 justify-center text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4">

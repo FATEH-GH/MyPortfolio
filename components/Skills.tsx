@@ -1,3 +1,5 @@
+"use client";
+
 import { DivMotion } from "./FramerMotion";
 import { FaHtml5, FaCss3Alt, FaGitAlt, FaReact, FaNode } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -5,15 +7,19 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiTailwindcss, SiFramer } from "react-icons/si";
 import { LiaDocker } from "react-icons/lia";
 import { BsFiletypeSql } from "react-icons/bs";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 const Skills = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <section id="Skills" className="font-montserrat text-white  ">
       <DivMotion
         className="flex flex-col items-center justify-center mx-8"
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1, ease: "easeIn" }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.7, ease: "easeIn" }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
       >
         <div className=" w-full">
           <h3 className=" flex text-black dark:text-[#ADB7BE] transition duration-300 justify-center text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
@@ -21,7 +27,10 @@ const Skills = () => {
           </h3>
           <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300  max-w-[100px] sm:max-w-[150px] flex justify-center m-auto mb-6 sm:mb-12" />
         </div>
-        <div className="flex flex-col gap-6 mx-auto p-4 sm:p-20 rounded-xl font-bold">
+        <div
+          className="flex flex-col gap-6 mx-auto p-4 sm:p-20 rounded-xl font-bold"
+          ref={ref}
+        >
           <div className="flex flex-wrap gap-4 itmes-center justify-center">
             <div className=" bg-[#3f3f40]  rounded-lg w-[100px] flex flex-col gap-2 items-center justify-center p-4 sm:w-[125px]">
               <FaHtml5 size="50px" color="red" />
