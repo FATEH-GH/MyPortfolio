@@ -20,6 +20,16 @@ const Overlaymenu = () => {
         </MotionLink>
 
         <MotionLink
+          href="#Skills"
+          className="dark:text-white text-black  transition-colors   py-2 px-1"
+          initial={{ opacity: 0, y: 35 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+        >
+          Skills
+        </MotionLink>
+
+        <MotionLink
           href="#Projects"
           className=" dark:text-white text-black  transition-colors  py-2 px-1"
           initial={{ opacity: 0, y: 35 }}

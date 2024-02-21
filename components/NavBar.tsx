@@ -60,6 +60,12 @@ const NavBar = () => {
             About
           </Link>
           <Link
+            href="#Skills"
+            className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
+          >
+            Skills
+          </Link>
+          <Link
             href="#Projects"
             className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
           >
