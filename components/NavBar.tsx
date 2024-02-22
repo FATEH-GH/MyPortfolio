@@ -15,8 +15,8 @@ import {
 
 const NavBar = () => {
   return (
-    <section className="mx-2 lg:mx-6 my-2 lg:my-8 ">
-      <div className="flex justify-between gap-10">
+    <section className="mx-2 lg:mx-6 my-2 lg:my-8  ">
+      <div className="flex justify-between gap-10 ">
         <div className="flex items-center gap-4">
           <Link
             href="/"
@@ -24,9 +24,9 @@ const NavBar = () => {
           >
             FG
           </Link>
-          <p className="text-[16px] sm:text-lg xl:text-xl dark:text-slate-200 font-bold text-black transition duration-300">
+          {/* <p className="text-[16px] sm:text-lg xl:text-xl dark:text-slate-200 font-bold text-black transition duration-300">
             ABDENNOUR FATEH GHRIBI
-          </p>
+          </p> */}
         </div>
 
         <Sheet>
