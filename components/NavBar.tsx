@@ -15,8 +15,8 @@ import {
 
 const NavBar = () => {
   return (
-    <section className="mx-2 lg:mx-6 my-2 lg:my-8  ">
-      <div className="flex justify-between gap-10 ">
+    <section className=" my-2 lg:my-8 max-w-4xl mx-auto">
+      <div className="flex justify-between items-center mx-auto ">
         <div className="flex items-center gap-4">
           <Link
             href="/"
@@ -52,7 +52,7 @@ const NavBar = () => {
           </SheetContent>
         </Sheet>
 
-        <nav className="max-lg:hidden  text-xl font-bold flex gap-20  mr-40 text-black dark:text-slate-200 transition duration-300">
+        <nav className="max-lg:hidden  text-xl font-bold flex gap-20 text-black dark:text-slate-200 transition duration-300">
           <Link
             href="#Aboutme"
             className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"

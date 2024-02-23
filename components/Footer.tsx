@@ -3,7 +3,7 @@ import { Icons } from "./Icons";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-slate-200 to-slate-400 dark:from-[#28282d] dark:to-[#101012] p-4 rounded-t-xl">
+    <footer className="bg-gradient-to-b from-slate-200 to-slate-400 dark:from-[#28282d] dark:to-[#101012] p-4 rounded-t-xl ">
       <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-evenly">
         <div className="flex items-center gap-4">
           <Link

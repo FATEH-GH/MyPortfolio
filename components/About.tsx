@@ -11,7 +11,10 @@ const About = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section id="Aboutme" className="font-montserrat text-white my-36">
+    <section
+      id="Aboutme"
+      className="font-montserrat text-white my-36 max-w-5xl mx-auto"
+    >
       <DivMotion
         className="flex items-center justify-center mx-8"
         initial={{ opacity: 0, x: -30 }}
