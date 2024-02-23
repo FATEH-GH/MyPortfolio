@@ -3,14 +3,14 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 import { DivMotion } from "./FramerMotion";
+import { Spotlight } from "./ui/Spotlight";
 
 const Hero = () => {
   return (
-    <section className="lg:py-4 flex flex-col justify-center gap-10 lg:flex-row lg:justify-evenly  my-10 lg:my-28 ">
+    <section className="lg:py-4 flex flex-col justify-center gap-10 lg:flex-row lg:justify-evenly  my-10 lg:my-28 z-[10] ">
       <DivMotion
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         className=" mx-auto lg:pt-14"
       >
         <h1 className="ml-4 text-[#f0be6d] transiton duration-300 mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold ">
@@ -53,7 +53,7 @@ const Hero = () => {
           </Link>
         </div>
       </DivMotion>
-      <DivMotion
+      {/* <DivMotion
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -66,7 +66,11 @@ const Hero = () => {
           width={500}
           height={500}
         />
-      </DivMotion>
+      </DivMotion> */}
+      <Spotlight
+        className="left-[20%] -top-[0%] md:left-[40%] md:-top-[-10%]"
+        fill="white"
+      />
     </section>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
 
 type SpotlightProps = {
   className?: string;
@@ -7,14 +8,16 @@ type SpotlightProps = {
 };
 
 export const Spotlight = ({ className, fill }: SpotlightProps) => {
+  const { theme } = useTheme();
+
   return (
     <svg
       className={cn(
-        "animate-spotlight pointer-events-none absolute z-[1]  h-[169%] w-[138%] lg:w-[84%] opacity-0",
+        "animate-spotlight pointer-events-none absolute z-[0]  h-[50%] w-[100%] opacity-0 duration-1000",
         className
       )}
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 3787 2842"
+      viewBox="0 1500 3787 2842"
       fill="none"
     >
       <g filter="url(#filter)">
@@ -24,14 +27,14 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
           rx="1924.71"
           ry="273.501"
           transform="matrix(-0.822377 -0.568943 -0.568943 0.822377 3631.88 2291.09)"
-          fill={fill || "white"}
-          fillOpacity="0.21"
+          fill={theme === "dark" ? "white" : "black"}
+          fillOpacity="0.20"
         ></ellipse>
       </g>
       <defs>
         <filter
           id="filter"
-          x="0.860352"
+          x="0.99"
           y="0.838989"
           width="3785.16"
           height="2840.26"
