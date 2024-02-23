@@ -9,13 +9,11 @@ export default function Home() {
   return (
     <main>
       <TracingBeam>
-        <div className=" mx-auto antialiased pt-4 relatived">
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <EmailSection />
-        </div>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <EmailSection />
       </TracingBeam>
     </main>
   );
