@@ -4,8 +4,8 @@ import { Icons } from "./Icons";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-slate-200 to-slate-400 dark:from-[#28282d] dark:to-[#101012] p-4 rounded-t-xl ">
-      <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between border-2">
-        <div className="border-2 flex items-center  justify-center">
+      <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between">
+        <div className="flex items-center  justify-center">
           <Link
             href="/"
             className="font-montserrat font-extrabold lg:p-4 p-2 lg:max-w-[60px] max-w-[60px] text-lg sm:text-lg lg:text-xl  rounded-full bg-[#f0be6d] text-black dark:text-slate-200 "
