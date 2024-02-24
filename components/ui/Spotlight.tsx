@@ -7,13 +7,14 @@ type SpotlightProps = {
   fill?: string;
 };
 
-export const Spotlight = ({ className, fill }: SpotlightProps) => {
+export const Spotlight = ({ className }: SpotlightProps) => {
   const { theme } = useTheme();
+  console.log("the theme", theme);
 
   return (
     <svg
       className={cn(
-        "animate-spotlight pointer-events-none absolute z-[0]  h-[50%] w-[100%] opacity-0 duration-1000",
+        "animate-spotlight pointer-events-none absolute z-[0]  h-[50%] w-[100%] opacity-0",
         className
       )}
       xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +28,8 @@ export const Spotlight = ({ className, fill }: SpotlightProps) => {
           rx="1924.71"
           ry="273.501"
           transform="matrix(-0.822377 -0.568943 -0.568943 0.822377 3631.88 2291.09)"
-          fill={theme === "dark" ? "white" : "black"}
+          fill={theme !== "light" ? "white" : "black"}
+          // fill={"white"}
           fillOpacity="0.20"
         ></ellipse>
       </g>
