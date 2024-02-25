@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section
       id="Aboutme"
-      className="font-montserrat text-white my-36 max-w-5xl mx-auto"
+      className="font-montserrat text-white my-36 max-w-7xl mx-auto"
     >
       <DivMotion
         className="flex items-center justify-center mx-8"
@@ -34,7 +34,7 @@ const About = () => {
               width={400}
               height={500}
             />
-            <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-extrabold  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-10">
+            <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-extrabold  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-7">
               Hi, my name is fateh and I am a front end developer from Algeria.
               I am excited about creating stunning websites, my expertise lies
               in translating desings into fully functional websites while
@@ -62,7 +62,7 @@ const About = () => {
           </h3>
           <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300 max-w-[100px] flex justify-center m-auto mb-6 sm:mb-12 " />
           <div className="flex flex-col gap-8 sm:flex-row justify-between items-center">
-            <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-bold px-2 sm:text-lg mb-6 lg:text-xl lg:max-w-[800px]">
+            <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-bold px-2 sm:text-lg mb-6 lg:text-xl lg:max-w-[800px] leading-7">
               I&apos;m a Frontend Web Developer building the Front-end of
               Websites and Web Applications that leads to the success of the
               overall product. Check out some of my work in the Projects
