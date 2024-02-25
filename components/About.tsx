@@ -41,10 +41,10 @@ const About = () => {
               utilizing my developement skills to enhance and customize their
               features. My end goal is to craft visually appealing user-friendly
               websites that provide a seamless browsing experience.
-              <br />
+              {/* <br />
               In my leasure time i like to spend it either with my dogs (I have
               two beautiful German Sheperd)🐕🐕 or watching car mods because I
-              like cars🚖.
+              like cars🚖. */}
             </p>
           </div>
         </div>
