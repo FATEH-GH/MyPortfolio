@@ -35,7 +35,7 @@ const About = () => {
               height={500}
             />
             <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-extrabold  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-7">
-              Hi, my name is fateh and I am a front end developer from Algeria.
+              Hi, my name is fateh and I am a Front End Developer from Algeria.
               I am excited about creating stunning websites, my expertise lies
               in translating desings into fully functional websites while
               utilizing my developement skills to enhance and customize their
