@@ -36,8 +36,8 @@ const Hero = () => {
           />
         </h1>
         <p className="ml-4 text-black dark:text-[#ADB7BE] transiton duration-300 font-bold px-2 sm:text-lg mb-6 lg:text-xl max-w-2xl">
-          A Frontend focused Web Developer building the Frontend of Websites and
-          Web Applications that leads to the success of the overall product.
+          A focused Frontend Web Developer building the Frontend of Websites and
+          Web Applications that lead to the success of the overall product.
         </p>
         <div className="flex flex-col gap-4 sm:flex-row items-center  xl:mt-12">
           <Link
