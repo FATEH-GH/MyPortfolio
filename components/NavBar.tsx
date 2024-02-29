@@ -19,7 +19,7 @@ const NavBar = () => {
       className="lg:pt-4  fixed  
     w-full top-0 left-0 z-10 backdrop-blur-md"
     >
-      <div className="flex justify-between items-center mx-auto  max-w-4xl  ">
+      <div className="flex justify-between items-center mx-auto  max-w-4xl p-1 ">
         <div className="flex items-center gap-4">
           <Link
             href="/"
