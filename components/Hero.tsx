@@ -7,7 +7,7 @@ import { Spotlight } from "./ui/Spotlight";
 
 const Hero = () => {
   return (
-    <section className="lg:py-4 flex flex-col justify-center gap-10 lg:flex-row lg:justify-evenly  max-sm:my-14 lg:my-28 z-10  ">
+    <section className="lg:py-4 flex flex-col justify-center gap-10 lg:flex-row lg:justify-evenly  max-sm:my-14 my-20 lg:my-28 z-10  ">
       <DivMotion
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
