@@ -33,7 +33,7 @@ const Skills = () => {
         >
           <div className="flex flex-wrap gap-4 itmes-center justify-center">
             <div className=" bg-[#3f3f40]  rounded-lg w-[100px] flex flex-col gap-2 items-center justify-center p-4 sm:w-[125px]">
-              <FaHtml5 size="50px" color="red" />
+              <FaHtml5 size="50px" color="#f16b31" />
               <span>html</span>
             </div>
             <div className="bg-[#3f3f40] rounded-lg w-[100px] flex flex-col items-center justify-center p-4 sm:w-[125px]">
