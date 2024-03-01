@@ -13,7 +13,7 @@ const Footer = () => {
         </Link>
         <div className="flex gap-4 items-center  justify-center">
           <div className="flex flex-col items-center justify-center gap-4 mb-4">
-            <h3 className="font-montserrat font-extrabold text-xl  sm:text-lg lg:text-xl xl:text-3xl  text-white">
+            <h3 className="font-montserrat font-extrabold text-xl  sm:text-lg lg:text-xl xl:text-3xl  text-black dark:text-slate-200">
               Social
             </h3>
             <div className="flex gap-4">
@@ -21,13 +21,13 @@ const Footer = () => {
                 href="https://github.com/FATEH-GH"
                 className="hover:opacity-70"
               >
-                <Icons.gitHub className="h-10 w-10 text-white" />
+                <Icons.gitHub className="h-10 w-10 text-black dark:text-slate-200 " />
               </Link>
               <Link
                 href="https://www.linkedin.com/in/fateh-ghribi/"
                 className="hover:opacity-70"
               >
-                <Icons.linkedIn className="h-10 w-10 text-white" />
+                <Icons.linkedIn className="h-10 w-10 text-black dark:text-slate-200" />
               </Link>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
       </div>
       <div className="mt-1 h-1 bg-[#f0be6d]  flex justify-center mx-10 mb-6 " />
       <div>
-        <p className="text-white text-xs sm:text-sm text-center">
+        <p className="text-black dark:text-slate-200 text-xs sm:text-sm text-center">
           &copy; Copyright 2024. Made by{" "}
           <Link href="/" className="font-bold">
             ABDENNOUR FATEH GHRIBI
