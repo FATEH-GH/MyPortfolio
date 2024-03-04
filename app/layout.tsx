@@ -5,7 +5,6 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 
 import { Provider } from "@/components/Provider";
-import DStar from "@/components/DStar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
