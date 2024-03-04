@@ -4,14 +4,7 @@ import Link from "next/link";
 import Overlaymenu from "./Overlaymenu";
 import DarkModeCard from "./DarkModeCard";
 
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const NavBar = () => {
   return (
