@@ -27,9 +27,6 @@ const NavBar = () => {
           >
             FG
           </Link>
-          {/* <p className="text-[16px] sm:text-lg xl:text-xl dark:text-slate-200 font-bold text-black transition duration-300">
-            ABDENNOUR FATEH GHRIBI
-          </p> */}
         </div>
 
         <Sheet>
