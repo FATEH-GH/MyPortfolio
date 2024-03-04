@@ -1,13 +1,6 @@
 "use client";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
-/*function onSubmit(data: FormData, e: React.FormEvent<HTMLFormElement>) {
-  e.preventDefault();
-  console.log("email sent");
-  sendEmail(data);
-}
-*/
 const EmailSection = () => {
   const form: any = useRef();
   const [email, setEmail] = useState("");
@@ -17,7 +10,6 @@ const EmailSection = () => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     setSent(true);
-    console.log(sent);
     e.preventDefault();
     setEmail("");
     setSubject("");
@@ -25,8 +17,6 @@ const EmailSection = () => {
     setTimeout(() => {
       setSent(false);
     }, 3000);
-
-    console.log(sent);
 
     emailjs
       .sendForm(
