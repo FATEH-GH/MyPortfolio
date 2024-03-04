@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
 import { useTheme } from "next-themes";
