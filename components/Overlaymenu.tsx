@@ -2,9 +2,11 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import DarkModeCard from "./DarkModeCard";
 import { Icons } from "./Icons";
+import { navigation } from "@/constants";
 
 const Overlaymenu = () => {
   const MotionLink = motion(Link);
+  const index = 0.1;
 
   return (
     <>
@@ -19,35 +21,18 @@ const Overlaymenu = () => {
           About
         </MotionLink>
 
-        <MotionLink
-          href="#Skills"
-          className="dark:text-white text-black  transition-colors   py-2 px-1"
-          initial={{ opacity: 0, y: 35 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
-        >
-          Skills
-        </MotionLink>
-
-        <MotionLink
-          href="#Projects"
-          className=" dark:text-white text-black  transition-colors  py-2 px-1"
-          initial={{ opacity: 0, y: 35 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65, ease: "easeInOut" }}
-        >
-          Projects
-        </MotionLink>
-
-        <MotionLink
-          href="#contact"
-          className="dark:text-white text-black  transition-colors  py-2 px-1"
-          initial={{ opacity: 0, y: 35 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, ease: "easeInOut" }}
-        >
-          Contact
-        </MotionLink>
+        {navigation.map((nav) => (
+          <MotionLink
+            key={nav.name}
+            href={nav.href}
+            className="dark:text-white text-black  transition-colors   py-2 px-1"
+            initial={{ opacity: 0, y: 35 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.55 + index, ease: "easeInOut" }}
+          >
+            {nav.name}
+          </MotionLink>
+        ))}
       </nav>
       <motion.div
         className="absolute z-10 top-[50%] left-[50%] right-[50%] flex items-center justify-center flex-row gap-10 "
