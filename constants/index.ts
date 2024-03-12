@@ -56,3 +56,10 @@ export const projects = [
       "Only with the hilink application you will no longer get lost, because we already support offline maps when there is no internet connection in the field, i helped designing the website.",
   },
 ];
+
+export const navigation = [
+  { name: "About", href: "#Aboutme" },
+  { name: "Skills", href: "#Skills" },
+  { name: "Projects", href: "#Projects" },
+  { name: "Contact", href: "#contact" },
+];

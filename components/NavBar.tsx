@@ -5,6 +5,7 @@ import Overlaymenu from "./Overlaymenu";
 import DarkModeCard from "./DarkModeCard";
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { navigation } from "@/constants";
 
 const NavBar = () => {
   return (
@@ -46,7 +47,17 @@ const NavBar = () => {
         </Sheet>
 
         <nav className="max-lg:hidden  text-xl font-bold flex gap-20 text-black dark:text-slate-200 transition duration-300">
-          <Link
+          {navigation.map((nav) => (
+            <Link
+              href={nav.href}
+              key={nav.name}
+              className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
+            >
+              {nav.name}
+            </Link>
+          ))}
+
+          {/* <Link
             href="#Aboutme"
             className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
           >
@@ -69,7 +80,7 @@ const NavBar = () => {
             className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
           >
             Contact
-          </Link>
+          </Link> */}
 
           <DarkModeCard />
         </nav>

@@ -50,7 +50,7 @@ const Overlaymenu = () => {
         </MotionLink>
       </nav>
       <motion.div
-        className="absolute z-10 top-[40%] left-20 flex items-center justify-center flex-row gap-10 "
+        className="absolute z-10 top-[50%] left-[50%] right-[50%] flex items-center justify-center flex-row gap-10 "
         initial={{ opacity: 0, y: 35 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.85, ease: "easeInOut" }}
