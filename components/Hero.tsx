@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 import { DivMotion } from "./FramerMotion";
@@ -55,20 +54,6 @@ const Hero = () => {
           </Link>
         </div>
       </DivMotion>
-      {/* <DivMotion
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        className="flex items-start justify-start mx-auto"
-      >
-        <Image
-          src="/Hero.png"
-          alt="hero image"
-          className="z-10"
-          width={500}
-          height={500}
-        />
-      </DivMotion> */}
       <Spotlight
         className="left-[20%] -top-[0%] md:left-[40%] md:-top-[-10%]"
         fill="white"
