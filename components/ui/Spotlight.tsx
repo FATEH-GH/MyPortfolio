@@ -9,8 +9,6 @@ type SpotlightProps = {
 
 export const Spotlight = ({ className }: SpotlightProps) => {
   const { theme } = useTheme();
-  console.log("the theme", theme);
-
   return (
     <svg
       className={cn(

@@ -56,32 +56,6 @@ const NavBar = () => {
               {nav.name}
             </Link>
           ))}
-
-          {/* <Link
-            href="#Aboutme"
-            className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
-          >
-            About
-          </Link>
-          <Link
-            href="#Skills"
-            className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
-          >
-            Skills
-          </Link>
-          <Link
-            href="#Projects"
-            className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
-          >
-            Projects
-          </Link>
-          <Link
-            href="#contact"
-            className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
-          >
-            Contact
-          </Link> */}
-
           <DarkModeCard />
         </nav>
       </div>
