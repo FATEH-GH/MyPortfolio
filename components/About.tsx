@@ -26,7 +26,7 @@ const About = () => {
           </h3>
           <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300  max-w-[100px] flex justify-center m-auto mb-6 sm:mb-12" />
 
-          <div className="flex flex-col gap-8 sm:flex-row justify-between items-center">
+          <div className="flex flex-col gap-8 lg:flex-row justify-between items-center">
             <Image
               src="/aboutme.svg"
               alt="just an image"
@@ -57,7 +57,7 @@ const About = () => {
             Get to know me
           </h3>
           <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300 max-w-[100px] flex justify-center m-auto mb-6 sm:mb-12 " />
-          <div className="flex flex-col gap-8 sm:flex-row justify-between items-center">
+          <div className="flex flex-col gap-8 lg:flex-row justify-between items-center">
             <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-bold px-2 sm:text-lg mb-6 lg:text-xl lg:max-w-[800px] leading-7">
               I&apos;m a Frontend Web Developer building the Front-end of
               Websites and Web Applications that leads to the success of the
