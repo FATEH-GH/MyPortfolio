@@ -32,7 +32,7 @@ const NavBar = () => {
   });
   return (
     <section className=" ">
-      <div className="flex justify-end items-center mx-auto  max-w-6xl p-1 ">
+      <div className="flex justify-center items-center mx-auto  max-w-6xl p-1 ">
         <Sheet>
           <SheetTrigger asChild>
             <div className="flex flex-col gap-0.5 justify-center items-center lg:hidden cursor-pointer">
@@ -68,7 +68,7 @@ const NavBar = () => {
           transition={{
             duration: 0.1,
           }}
-          className=" hidden  text-xl font-bold md:flex gap-20 text-black dark:text-slate-200 transition duration-300"
+          className=" hidden  text-xl font-bold md:flex gap-20 text-black dark:text-slate-200 transition duration-300 mx-2"
         >
           {navigation.map((nav) => (
             <Link
@@ -85,7 +85,7 @@ const NavBar = () => {
           navItems={navigation}
           className="font-bold flex gap-20 text-black dark:text-slate-200 transition duration-300 "
         />
-        {!visiblenav ? <DarkModeCard /> : <></>}
+        {/* {!visiblenav ? <DarkModeCard /> : <></>} */}
       </div>
     </section>
   );

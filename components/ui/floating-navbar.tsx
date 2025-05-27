@@ -50,7 +50,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          " backdrop-blur-md flex max-w-fit  fixed top-1 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-10  px-4 py-2  items-center justify-center ",
+          " backdrop-blur-md hidden sm:flex max-w-fit  fixed top-1 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-10  px-4 py-2  items-center justify-center ",
           className
         )}
       >
@@ -62,7 +62,7 @@ export const FloatingNav = ({
               "relative flex items-center justify-center hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150  "
             )}
           >
-            <span className="hidden sm:block text-lg">{navItem.name}</span>
+            <span className=" sm:text-lg">{navItem.name}</span>
           </a>
         ))}
         <DarkModeCard />
