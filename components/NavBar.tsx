@@ -6,36 +6,46 @@ import DarkModeCard from "./DarkModeCard";
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navigation } from "@/constants";
+import { FloatingNav } from "./ui/floating-navbar";
+import { useState } from "react";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useMotionValueEvent,
+} from "motion/react";
 
 const NavBar = () => {
-  return (
-    <section
-      className="lg:pt-4  fixed  
-    w-full top-0 left-0 z-10 backdrop-blur-md"
-    >
-      <div className="flex justify-between items-center mx-auto  max-w-4xl p-1 ">
-        <div className="flex items-center gap-4">
-          <Link
-            href="/"
-            className="font-montserrat font-extrabold lg:p-4 p-2 lg:max-w-[60px] max-w-[60px] text-lg sm:text-lg lg:text-xl  rounded-full bg-[#f0be6d] text-black dark:text-slate-200 "
-          >
-            FG
-          </Link>
-        </div>
+  const { scrollYProgress } = useScroll();
 
+  const [visiblenav, setVisible] = useState(false);
+
+  useMotionValueEvent(scrollYProgress, "change", (current) => {
+    // Check if current is not undefined and is a number
+    if (typeof current === "number") {
+      if (scrollYProgress.get() === 0) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    }
+  });
+  return (
+    <section className=" ">
+      <div className="flex justify-end items-center mx-auto  max-w-6xl p-1 ">
         <Sheet>
           <SheetTrigger asChild>
             <div className="flex flex-col gap-0.5 justify-center items-center lg:hidden cursor-pointer">
               <span
-                className="bg-black dark:bg-slate-200  block transition-all duration-300 ease-out 
+                className="md:hidden bg-black dark:bg-slate-200  block transition-all duration-300 ease-out 
                       h-0.5 w-6 rounded-sm "
               ></span>
               <span
-                className="bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
+                className="md:hidden bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
                     h-0.5 w-6 rounded-sm my-0.5 "
               ></span>
               <span
-                className="bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
+                className="md:hidden bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
                     h-0.5 w-6 rounded-sm "
               ></span>
             </div>
@@ -46,7 +56,20 @@ const NavBar = () => {
           </SheetContent>
         </Sheet>
 
-        <nav className="max-lg:hidden  text-xl font-bold flex gap-20 text-black dark:text-slate-200 transition duration-300">
+        <motion.nav
+          initial={{
+            opacity: 0,
+            y: -100,
+          }}
+          animate={{
+            y: visiblenav ? 0 : -100,
+            opacity: visiblenav ? 1 : 0,
+          }}
+          transition={{
+            duration: 0.1,
+          }}
+          className=" hidden  text-xl font-bold md:flex gap-20 text-black dark:text-slate-200 transition duration-300"
+        >
           {navigation.map((nav) => (
             <Link
               href={nav.href}
@@ -56,8 +79,13 @@ const NavBar = () => {
               {nav.name}
             </Link>
           ))}
-          <DarkModeCard />
-        </nav>
+          {visiblenav ? <DarkModeCard /> : <></>}
+        </motion.nav>
+        <FloatingNav
+          navItems={navigation}
+          className="font-bold flex gap-20 text-black dark:text-slate-200 transition duration-300 "
+        />
+        {!visiblenav ? <DarkModeCard /> : <></>}
       </div>
     </section>
   );
