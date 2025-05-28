@@ -1,95 +1,139 @@
-"use client";
-
-import { useSpring, animated } from "react-spring";
-
+import * as React from "react";
+import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 
-const DarkModeCard = () => {
-  const { theme = "dark", setTheme } = useTheme();
+import { Button } from "@/components/ui/Button";
+import { useHotkeys } from "react-hotkeys-hook";
 
-  const properties = {
-    moon: {
-      r: 9,
-      transform: "rotate(40deg)",
-      cx: 12,
-      cy: 4,
-      opacity: 0,
-    },
-    sun: {
-      r: 5,
-      transform: "rotate(90deg)",
-      cx: 30,
-      cy: 0,
-      opacity: 1,
-    },
-    springConfig: { mass: 4, tension: 250, friction: 35 },
+type Theme = "light" | "dark" | "system";
+
+const KEYS = ["ctrl+u", "meta+u"];
+
+export default function DarkModeCard() {
+  const { setTheme, theme: currentTheme } = useTheme();
+
+  const handleChangeTheme = (theme: Theme) => {
+    if (theme === currentTheme) return;
+
+    if (!document.startViewTransition) return setTheme(theme);
+    document.startViewTransition(() => setTheme(theme));
   };
-  const { r, transform, cx, cy, opacity } =
-    theme == "dark" ? properties["moon"] : properties["sun"];
-  const svgContainerProps = useSpring({
-    transform,
-    config: properties.springConfig,
-  });
-  const CenterCircleProps: any = useSpring({
-    r,
-    config: properties.springConfig,
-  });
-  const MaskedCircleProps: any = useSpring({
-    cx,
-    cy,
-    config: properties.springConfig,
-  });
-  const linesProps = useSpring({ opacity, config: properties.springConfig });
+
+  useHotkeys(
+    KEYS,
+    () => {
+      handleChangeTheme(currentTheme === "light" ? "dark" : "light");
+    },
+    { preventDefault: true }
+  );
 
   return (
-    <div className="">
-      <animated.svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="black"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        style={{ ...svgContainerProps, cursor: "pointer" }}
-        onClick={() => {
-          theme == "dark" ? setTheme("light") : setTheme("dark");
-        }}
-      >
-        <mask id="mask">
-          <rect x="0" y="0" width="100%" height="100%" fill="white" />
-          <animated.circle
-            style={MaskedCircleProps}
-            cx="12"
-            cy="4"
-            r="9"
-            fill="black"
-          />
-        </mask>
-        <animated.circle
-          style={CenterCircleProps}
-          fill="white"
-          cx="12"
-          cy="12"
-          r="9"
-          mask="url(#mask)"
-        />
-
-        <animated.g style={linesProps} fill="black">
-          <line x1="12" y1="1" x2="12" y2="3" />
-          <line x1="12" y1="21" x2="12" y2="23" />
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-          <line x1="1" y1="12" x2="3" y2="12" />
-          <line x1="21" y1="12" x2="23" y2="12" />
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-        </animated.g>
-      </animated.svg>
-    </div>
+    <Button
+      variant="outline"
+      size="icon"
+      onClick={() =>
+        handleChangeTheme(currentTheme === "light" ? "dark" : "light")
+      }
+    >
+      <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+      <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <span className="sr-only">Toggle theme</span>
+    </Button>
   );
-};
+}
 
-export default DarkModeCard;
+// "use client";'use client';
+
+// import { useSpring, animated } from "react-spring";
+
+// import { useTheme } from "next-themes";
+
+// const DarkModeCard = () => {
+//   const { theme = "dark", setTheme } = useTheme();
+
+//   const properties = {
+//     moon: {
+//       r: 9,
+//       transform: "rotate(40deg)",
+//       cx: 12,
+//       cy: 4,
+//       opacity: 0,
+//     },
+//     sun: {
+//       r: 5,
+//       transform: "rotate(90deg)",
+//       cx: 30,
+//       cy: 0,
+//       opacity: 1,
+//     },
+//     springConfig: { mass: 4, tension: 250, friction: 35 },
+//   };
+//   const { r, transform, cx, cy, opacity } =
+//     theme == "dark" ? properties["moon"] : properties["sun"];
+//   const svgContainerProps = useSpring({
+//     transform,
+//     config: properties.springConfig,
+//   });
+//   const CenterCircleProps: any = useSpring({
+//     r,
+//     config: properties.springConfig,
+//   });
+//   const MaskedCircleProps: any = useSpring({
+//     cx,
+//     cy,
+//     config: properties.springConfig,
+//   });
+//   const linesProps = useSpring({ opacity, config: properties.springConfig });
+
+//   return (
+//     <div className="">
+//       <animated.svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         width="24"
+//         height="24"
+//         viewBox="0 0 24 24"
+//         fill="none"
+//         stroke="black"
+//         strokeWidth="2"
+//         strokeLinecap="round"
+//         strokeLinejoin="round"
+//         style={{ ...svgContainerProps, cursor: "pointer" }}
+//         onClick={() => {
+//           theme == "dark" ? setTheme("light") : setTheme("dark");
+//         }}
+//       >
+//         <mask id="mask">
+//           <rect x="0" y="0" width="100%" height="100%" fill="white" />
+//           <animated.circle
+//             style={MaskedCircleProps}
+//             cx="12"
+//             cy="4"
+//             r="9"
+//             fill="black"
+//           />
+//         </mask>
+//         <animated.circle
+//           style={CenterCircleProps}
+//           fill="white"
+//           cx="12"
+//           cy="12"
+//           r="9"
+//           mask="url(#mask)"
+//         />
+
+//         <animated.g style={linesProps} fill="black">
+//           <line x1="12" y1="1" x2="12" y2="3" />
+//           <line x1="12" y1="21" x2="12" y2="23" />
+//           <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+//           <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+//           <line x1="1" y1="12" x2="3" y2="12" />
+//           <line x1="21" y1="12" x2="23" y2="12" />
+//           <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+//           <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+//         </animated.g>
+//       </animated.svg>
+//     </div>
+//   );
+// };
+
+// export default DarkModeCard;

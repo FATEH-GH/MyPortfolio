@@ -34,12 +34,9 @@ const About = () => {
             <HeroGeometric />
             <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-extrabold  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-7 z-10">
               Hi, my name is fateh and I am a Software Engineer and a Front-End
-              Developer from Algeria. I am excited about creating stunning
-              websites, my expertise lies in translating desings into fully
-              functional websites while utilizing my developement skills to
-              enhance and customize their features. My end goal is to craft
-              visually appealing user-friendly websites that provide a seamless
-              browsing experience.
+              Developer from Algeria. my expertise lies in translating desings
+              into fully functional websites while utilizing my developement
+              skills to enhance and customize their features.
             </p>
           </div>
         </div>
