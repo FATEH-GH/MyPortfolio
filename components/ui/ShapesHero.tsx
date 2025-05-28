@@ -1,15 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Pacifico } from "next/font/google";
-import Image from "next/image";
 import { cn } from "@/lib/utils";
-
-const pacifico = Pacifico({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-pacifico",
-});
 
 function ElegantShape({
   className,
@@ -77,33 +69,12 @@ function ElegantShape({
   );
 }
 
-export default function HeroGeometric({
-  badge = "Kokonut UI",
-  title1 = "Elevate Your",
-  title2 = "Digital Vision",
-}: {
-  badge?: string;
-  title1?: string;
-  title2?: string;
-}) {
-  const fadeUpVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-        delay: 0.5 + i * 0.2,
-        ease: [0.25, 0.4, 0.25, 1],
-      },
-    }),
-  };
-
+export default function HeroGeometric() {
   return (
     <div className="relative h-[250px] lg:h-[320px] w-full flex items-center justify-center overflow-visible z-0">
       <div className="absolute inset-0 bg-linear-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
 
-      <div className="absolute inset-0 overflow-visible">
+      <div className="absolute inset-0 overflow-visible  ">
         <ElegantShape
           delay={0.3}
           width={300}

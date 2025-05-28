@@ -13,12 +13,12 @@ const About = () => {
   return (
     <section
       id="Aboutme"
-      className="font-montserrat text-white my-36 max-w-7xl mx-auto"
+      className="font-montserrat text-white max-w-7xl mx-auto"
     >
       <DivMotion
         className="flex items-center justify-center mx-8"
         initial={{ opacity: 0, x: -30 }}
-        transition={{ duration: 1, ease: "easeIn" }}
+        transition={{ duration: 1 }}
         animate={isInView ? { opacity: 1, x: 0 } : {}}
       >
         <div className="my-10  w-full ">
@@ -27,13 +27,10 @@ const About = () => {
           </h3>
           <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300  max-w-[100px] flex justify-center m-auto mb-6 sm:mb-12" />
 
-          <div className="flex flex-col gap-8 lg:flex-row justify-between items-center">
-            {/* <Image
-              src="/aboutme.svg"
-              alt="just an image"
-              width={400}
-              height={500}
-            /> */}
+          <div
+            className="flex flex-col gap-8 lg:flex-row justify-between items-center"
+            ref={ref}
+          >
             <HeroGeometric />
             <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-extrabold  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-7 z-10">
               Hi, my name is fateh and I am a Software Engineer and a Front-End
@@ -48,10 +45,9 @@ const About = () => {
         </div>
       </DivMotion>
       <DivMotion
-        ref={ref}
         className="flex items-center justify-center mx-8"
         initial={{ opacity: 0, x: 30 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        transition={{ duration: 1 }}
         animate={isInView ? { opacity: 1, x: 0 } : {}}
       >
         <div className=" my-10 w-full">

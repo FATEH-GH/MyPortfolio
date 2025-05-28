@@ -32,7 +32,7 @@ const NavBar = () => {
   });
   return (
     <section className=" ">
-      <div className="flex justify-center items-center mx-auto  max-w-6xl p-1 ">
+      <div className="flex justify-end md:justify-center items-center mx-auto  max-w-6xl p-1 ">
         <Sheet>
           <SheetTrigger asChild>
             <div className="flex flex-col gap-0.5 justify-center items-center lg:hidden cursor-pointer">
