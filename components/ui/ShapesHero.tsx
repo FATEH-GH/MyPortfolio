@@ -90,7 +90,7 @@ export default function HeroGeometric() {
           height={120}
           rotate={-15}
           gradient="from-rose-500/[0.15]"
-          className="right-[-5%] md:right-[0%] top-[35%] md:top-[75%] lg:top-[60%] xl:top-[75%] hidden md:block"
+          className="right-[-5%] md:-right-[0%] top-[35%] md:top-[75%] lg:top-[60%] xl:top-[75%] hidden md:block"
         />
 
         <ElegantShape
@@ -120,7 +120,7 @@ export default function HeroGeometric() {
           className="left-[15%] md:left-[25%] top-[15%] md:top-[10%]"
         />
       </div>
-      <div className="absolute inset-0 bg-linear-to-t from-[#030303] via-transparent to-[#030303]/80 pointer-events-none" />
+      <div className="absolute inset-0 pointer-events-none" />
     </div>
   );
 }
