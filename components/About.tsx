@@ -4,6 +4,7 @@ import Image from "next/image";
 import { DivMotion } from "./FramerMotion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import HeroGeometric from "./ui/ShapesHero";
 
 const About = () => {
   const ref = useRef(null);
@@ -27,13 +28,14 @@ const About = () => {
           <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300  max-w-[100px] flex justify-center m-auto mb-6 sm:mb-12" />
 
           <div className="flex flex-col gap-8 lg:flex-row justify-between items-center">
-            <Image
+            {/* <Image
               src="/aboutme.svg"
               alt="just an image"
               width={400}
               height={500}
-            />
-            <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-extrabold  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-7">
+            /> */}
+            <HeroGeometric />
+            <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-extrabold  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-7 z-10">
               Hi, my name is fateh and I am a Software Engineer and a Front-End
               Developer from Algeria. I am excited about creating stunning
               websites, my expertise lies in translating desings into fully

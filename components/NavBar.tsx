@@ -18,7 +18,7 @@ import {
 const NavBar = () => {
   const { scrollYProgress } = useScroll();
 
-  const [visiblenav, setVisible] = useState(false);
+  const [visiblenav, setVisible] = useState(true);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
