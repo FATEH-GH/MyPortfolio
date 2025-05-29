@@ -14,6 +14,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
+import { Button } from "./ui/Button";
 
 const NavBar = () => {
   const { scrollYProgress } = useScroll();
@@ -35,18 +36,18 @@ const NavBar = () => {
       <div className="flex justify-end md:justify-center items-center mx-auto  max-w-6xl p-1 ">
         <Sheet>
           <SheetTrigger asChild>
-            <div className="flex flex-col gap-0.5 justify-center items-center lg:hidden cursor-pointer">
+            <div className="flex flex-col gap-0.5 justify-center items-center lg:hidden cursor-pointer border-4 mr-4 mt-6">
               <span
                 className="md:hidden bg-black dark:bg-slate-200  block transition-all duration-300 ease-out 
-                      h-0.5 w-6 rounded-sm "
+                      h-1 w-6 rounded-sm "
               ></span>
               <span
                 className="md:hidden bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
-                    h-0.5 w-6 rounded-sm my-0.5 "
+                    h-1 w-6 rounded-sm my-0.5 "
               ></span>
               <span
                 className="md:hidden bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
-                    h-0.5 w-6 rounded-sm "
+                    h-1 w-6 rounded-sm "
               ></span>
             </div>
           </SheetTrigger>
@@ -85,7 +86,6 @@ const NavBar = () => {
           navItems={navigation}
           className="font-bold flex gap-20 text-black dark:text-slate-200 transition duration-300 "
         />
-        {/* {!visiblenav ? <DarkModeCard /> : <></>} */}
       </div>
     </section>
   );

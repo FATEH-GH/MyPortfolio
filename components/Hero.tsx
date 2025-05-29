@@ -46,7 +46,7 @@ const Hero = () => {
         <BoxReveal
           duration={0.5}
           boxColor="#f0be6d"
-          className="flex flex-col gap-4 sm:flex-row items-center  xl:mt-12  h-12"
+          className="flex flex-col gap-4 sm:flex-row items-center justify-center  xl:mt-12  h-12"
         >
           <Link
             target="_blank"

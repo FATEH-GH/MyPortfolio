@@ -29,6 +29,7 @@ export default function DarkModeCard() {
 
   return (
     <Button
+      className="p-4"
       variant="outline"
       size="icon"
       onClick={() =>
