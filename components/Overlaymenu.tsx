@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { motion } from "framer-motion";
 import DarkModeCard from "./DarkModeCard";
-import { Icons } from "./Icons";
 import { navigation } from "@/constants";
+import { GithubIcon } from "./GItHub";
+import { LinkedinIcon } from "./LinkedInIcon";
+import { XIcon } from "./X";
 
 const Overlaymenu = () => {
   return (
@@ -18,13 +19,16 @@ const Overlaymenu = () => {
           </Link>
         ))}
       </nav>
-      <div className="absolute z-10 top-[50%] left-[50%] right-[50%] flex items-center justify-center flex-row gap-10 ">
+      <div className="absolute z-10 top-[50%] left-[50%] right-[50%] flex items-center justify-center flex-row gap-6 ">
         <Link href="https://github.com/FATEH-GH">
-          <Icons.gitHub className="h-8 w-8" />
+          <LinkedinIcon className="h-8 w-8" size={28} />
         </Link>
 
         <Link href="https://www.linkedin.com/in/fateh-ghribi/">
-          <Icons.linkedIn className="h-8 w-8" />
+          <GithubIcon className="h-8 w-8" size={28} />
+        </Link>
+        <Link href="https://x.com/GhribiFateh">
+          <XIcon className="h-8 w-8" size={28} />
         </Link>
         <DarkModeCard />
       </div>

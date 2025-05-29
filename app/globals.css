@@ -127,7 +127,7 @@ layer(base);
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: #e2e8f0;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -154,7 +154,7 @@ layer(base);
     --radius: 0.5rem;
   }
   .dark {
-    --background: 0 0% 3.9%;
+    --background: #35353b;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
@@ -239,4 +239,43 @@ layer(base);
       @apply bg-background text-foreground;
     }
   }
+}
+
+/*Grid Pattern Backgrounds*/
+
+.bg-dot-pattern {
+  background-image: radial-gradient(#f0be6d 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-dot-pattern-gradient {
+  background: linear-gradient(to right, #f0be6d, transparent);
+  background-image: radial-gradient(#f0be6d 1.2px, transparent 1.4px);
+  background-size: 30px 24px;
+}
+
+.bg-line-pattern {
+  background-image: linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+    linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-radial-dot-pattern {
+  background-color: var(--background);
+  background-image: radial-gradient(#f0be6d 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+  background-position: center;
+  position: relative;
+}
+
+.bg-radial-dot-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at center,
+    transparent 72%,
+    var(--background) 90%
+  );
+  pointer-events: none;
 }
