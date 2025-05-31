@@ -1,3 +1,11 @@
+import { BiLogoMongodb } from "react-icons/bi";
+import { BsFiletypeSql } from "react-icons/bs";
+import { FaCss3Alt, FaGitAlt, FaHtml5, FaNode, FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { LiaDocker } from "react-icons/lia";
+import { SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+
 export const projects = [
   {
     mainProject: "/bg-project-6.png",
@@ -36,16 +44,6 @@ export const projects = [
     describtion:
       "Discover stylish Adidas arrivals, quality confort, and innovation for your active life. A nodern adidas landing page that i chose to remake, which is responsive across all devices (tablets, laptops, mobile...) hope you like it :) .",
   },
-
-  // {
-  //   mainProject: "/bg-project-4.png",
-  //   subProject1: "/project-4-1.png",
-  //   subProject2: "/project-4-1.png",
-  //   title: "ToDoList",
-  //   link: "https://todolist-eta-green.vercel.app/",
-  //   describtion:
-  //     "A minimilic website to make you check your daily objectives, with the intnetion to make you a better person in achieving your daily goals for a better improvement in your planing skills.",
-  // },
   {
     mainProject: "/bg-project-2.png",
     subProject1: "/project-2-1.png",
@@ -61,7 +59,72 @@ export const navigation = [
   { name: "About", href: "#Aboutme" },
   { name: "Skills", href: "#Skills" },
   { name: "Projects", href: "#Projects" },
-  { name: "Contact", href: "#contact" },
+  { name: "Experience", href: "#Experience" },
+];
+
+export const IconSkills = [
+  {
+    icon: FaHtml5,
+    label: "HTML",
+    color: "#f16b31",
+  },
+  {
+    icon: FaCss3Alt,
+    label: "CSS",
+    color: "#2d52e4",
+  },
+  {
+    icon: IoLogoJavascript,
+    label: "Javascipt",
+    color: "yellow",
+  },
+
+  {
+    icon: SiTailwindcss,
+    label: "Tailwindcss",
+    color: "#0ea4e8",
+  },
+
+  {
+    icon: LiaDocker,
+    label: "Docker",
+    color: "#2bbbeb",
+  },
+
+  {
+    icon: FaGitAlt,
+    label: "Git",
+    color: "#f05438",
+  },
+
+  {
+    icon: BsFiletypeSql,
+    label: "SQL",
+    color: "orange",
+  },
+
+  {
+    icon: BiLogoMongodb,
+    label: "MongoDB",
+    color: "white",
+  },
+
+  {
+    icon: FaReact,
+    label: "ReactJs",
+    color: "#2bbbeb",
+  },
+
+  {
+    icon: FaNode,
+    color: "green",
+    label: "Node.js",
+  },
+  {
+    icon: TbBrandNextjs,
+    color: "white",
+    label: "NEXT.JS",
+  },
 ];
 
 export const experience = [

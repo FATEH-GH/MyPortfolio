@@ -1,13 +1,7 @@
 "use client";
 
-import { FaHtml5, FaCss3Alt, FaGitAlt, FaReact, FaNode } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiTailwindcss } from "react-icons/si";
-import { LiaDocker } from "react-icons/lia";
-import { BsFiletypeSql } from "react-icons/bs";
-import { BiLogoMongodb } from "react-icons/bi";
 import { HoverEffect } from "./ui/Card-hover-effect";
+import { IconSkills } from "@/constants";
 
 const Skills = () => {
   return (
@@ -24,70 +18,5 @@ const Skills = () => {
     </section>
   );
 };
-
-const IconSkills = [
-  {
-    icon: FaHtml5,
-    label: "HTML",
-    color: "#f16b31",
-  },
-  {
-    icon: FaCss3Alt,
-    label: "CSS",
-    color: "#2d52e4",
-  },
-  {
-    icon: IoLogoJavascript,
-    label: "Javascipt",
-    color: "yellow",
-  },
-
-  {
-    icon: SiTailwindcss,
-    label: "Tailwindcss",
-    color: "#0ea4e8",
-  },
-
-  {
-    icon: LiaDocker,
-    label: "Docker",
-    color: "#2bbbeb",
-  },
-
-  {
-    icon: FaGitAlt,
-    label: "Git",
-    color: "#f05438",
-  },
-
-  {
-    icon: BsFiletypeSql,
-    label: "SQL",
-    color: "orange",
-  },
-
-  {
-    icon: BiLogoMongodb,
-    label: "MongoDB",
-    color: "white",
-  },
-
-  {
-    icon: FaReact,
-    label: "ReactJs",
-    color: "#2bbbeb",
-  },
-
-  {
-    icon: FaNode,
-    color: "green",
-    label: "Node.js",
-  },
-  {
-    icon: TbBrandNextjs,
-    color: "white",
-    label: "NEXT.JS",
-  },
-];
 
 export default Skills;

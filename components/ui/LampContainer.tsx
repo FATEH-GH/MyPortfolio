@@ -30,10 +30,7 @@ export const LampContainer = ({
             backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
           }}
           className="absolute inset-auto right-1/2 h-56 overflow-visible w-120 bg-gradient-conic from-[#f0be6d] via-transparent to-transparent text-white [--conic-position:from_70deg_at_center_top]"
-        >
-          {/* <div className="absolute  w-full left-0 bg-slate-950 h-40 bottom-0 z-20 mask-[linear-gradient(to_top,white,transparent)]" />
-          <div className="absolute  w-40 h-full left-0 bg-slate-950  bottom-0 z-20 mask-[linear-gradient(to_right,white,transparent)]" /> */}
-        </motion.div>
+        ></motion.div>
         <motion.div
           initial={{ opacity: 0.5, width: "15rem" }}
           whileInView={{ opacity: 1, width: "30rem" }}
@@ -46,11 +43,7 @@ export const LampContainer = ({
             backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
           }}
           className="absolute inset-auto left-1/2 h-56 w-120 bg-gradient-conic from-transparent via-transparent to-[#f0be6d] text-white [--conic-position:from_290deg_at_center_top]"
-        >
-          {/* <div className="absolute  w-40 h-full right-0 bg-slate-950  bottom-0 z-20 mask-[linear-gradient(to_left,white,transparent)]" />
-          <div className="absolute  w-full right-0 bg-slate-950 h-40 bottom-0 z-20 mask-[linear-gradient(to_top,white,transparent)]" /> */}
-        </motion.div>
-        {/* <div className="absolute top-1/2 h-48 w-full translate-y-12 scale-x-150 bg-slate-950 blur-2xl"></div> */}
+        ></motion.div>
         <div className="absolute top-1/2 z-50 h-48 w-full bg-transparent opacity-10 backdrop-blur-md"></div>
         <div className="absolute inset-auto z-50 h-36 w-md -translate-y-1/2 rounded-full bg-[#f0be6d] opacity-50 blur-3xl"></div>
         <motion.div
@@ -73,8 +66,6 @@ export const LampContainer = ({
           }}
           className="absolute inset-auto z-50 h-0.5 w-120 -translate-y-28 bg-[#f0be6d] "
         ></motion.div>
-
-        {/* <div className="absolute inset-auto z-40 h-44 w-full -translate-y-50 bg-slate-950 "></div> */}
       </div>
 
       <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import DarkModeCard from "./DarkModeCard";
 import { navigation } from "@/constants";
-import { GithubIcon } from "./GItHub";
-import { LinkedinIcon } from "./LinkedInIcon";
-import { XIcon } from "./X";
+import { GithubIcon } from "./ui/Icons/GItHub";
+import { LinkedinIcon } from "./ui/Icons/LinkedInIcon";
+import { XIcon } from "./ui/Icons/X";
 
 const Overlaymenu = () => {
   return (

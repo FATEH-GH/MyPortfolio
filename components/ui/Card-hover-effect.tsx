@@ -6,8 +6,6 @@ import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 import { IconType } from "react-icons";
 
-console.log("hello there ");
-
 export const HoverEffect = ({
   items,
   className,

@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { IoCheckmark } from "react-icons/io5";
-import { CheckIcon } from "./Check";
+import { CheckIcon } from "./ui/Icons/Check";
 
 interface Props {
   image: string;

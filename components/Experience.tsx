@@ -3,7 +3,7 @@ import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {
   return (
-    <section id="Skills" className="font-montserrat text-white ">
+    <section id="Experience" className="font-montserrat text-white ">
       <div className="flex flex-col items-center justify-center mx-8">
         <div className=" w-full">
           <h3 className=" flex text-black dark:text-[#ADB7BE] transition duration-300 justify-center text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
