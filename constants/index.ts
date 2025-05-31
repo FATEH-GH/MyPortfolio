@@ -63,3 +63,79 @@ export const navigation = [
   { name: "Projects", href: "#Projects" },
   { name: "Contact", href: "#contact" },
 ];
+
+export const experience = [
+  {
+    image: "/Gendarmerie.png",
+    title: "MDN",
+    degree: "GAP YEAR | Military Service",
+    date: "May 2024-May 2025",
+    speciality: "ACADEMIC BACKGROUND IN ISOFTWARE ENGINEERING",
+    skills: [],
+    work: [
+      {
+        icon: "🎖️",
+        role: "Served in military, focusing on teamwork and discipline.",
+      },
+      {
+        icon: "💻",
+        role: "Worked as a software engineer",
+      },
+      {
+        icon: "👨‍🏫",
+        role: "Taught part-time.",
+      },
+    ],
+  },
+  {
+    image: "/USTHB.jpg",
+    title: "HOUARI BOUMEDIENE UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+    degree: "Master 2",
+    date: "Sep 2022-Jun 2023",
+    speciality: "ACADEMIC BACKGROUND IN SOFTWARE ENGINEERING",
+    skills: [
+      "Algorithms and data Structures",
+      "Software Engenieering",
+      "Databases and problem solving",
+    ],
+    work: [
+      {
+        icon: "",
+        role: "",
+      },
+    ],
+  },
+  {
+    image: "/USTHB.jpg",
+    title: "HOUARI BOUMEDIENE UNIVERSITY OF SCIENCE AND TECHNOLOGY",
+    degree: "BACHELOR'S",
+    date: "Sep 2020-Jun 2021",
+    speciality:
+      "ACADEMIC BACKGROUND IN INFORMATION SYSTEMS AND SOFTWARE ENGINEERING",
+    skills: [
+      "Algorithms and data Structures",
+      "Software Engenieering",
+      "Databases and problem solving",
+    ],
+    work: [
+      {
+        icon: "",
+        role: "",
+      },
+    ],
+  },
+  {
+    image: "/highschool.png",
+    title: "Kasdi Merbah High School",
+    degree: "BACHELOR'S",
+    date: "Sep 2017-Jun 2018",
+    speciality: "DEGREE IN EXPERIMENTAL SCIENCES",
+    skills: [],
+    work: [
+      {
+        icon: "",
+        role: "",
+      },
+    ],
+  },
+];

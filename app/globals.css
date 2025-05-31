@@ -262,8 +262,8 @@ layer(base);
 
 .bg-radial-dot-pattern {
   background-color: var(--background);
-  background-image: radial-gradient(#f0be6d 1.5px, transparent 1.5px);
-  background-size: 24px 24px;
+  background-image: radial-gradient(#f0be6d 1.2px, transparent 1.2px);
+  background-size: 26px 26px;
   background-position: center;
   position: relative;
 }
@@ -274,7 +274,7 @@ layer(base);
   inset: 0;
   background: radial-gradient(
     circle at center,
-    transparent 72%,
+    transparent 70%,
     var(--background) 90%
   );
   pointer-events: none;
