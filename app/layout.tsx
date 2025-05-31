@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="dark:bg-[#35353b] bg-slate-200 transition duration-300 antialiased ">
+      <body className=" transition duration-300 antialiased ">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
