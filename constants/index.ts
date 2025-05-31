@@ -94,9 +94,11 @@ export const experience = [
     date: "Sep 2022-Jun 2023",
     speciality: "ACADEMIC BACKGROUND IN SOFTWARE ENGINEERING",
     skills: [
-      "Algorithms and data Structures",
-      "Software Engenieering",
-      "Databases and problem solving",
+      "Software Engineering",
+      "Advanced database structures ",
+      "Design of software architecture and interfaces",
+      "design efficient, scalable, and maintainable software systems to solve them.",
+      "Work in teams with other engineers, product managers, designers, and stakeholders.",
     ],
     work: [
       {
@@ -114,8 +116,9 @@ export const experience = [
       "ACADEMIC BACKGROUND IN INFORMATION SYSTEMS AND SOFTWARE ENGINEERING",
     skills: [
       "Algorithms and data Structures",
-      "Software Engenieering",
+      "Software Engineering",
       "Databases and problem solving",
+      "Design and manage databases, write queries, and ensure data integrity and performance.",
     ],
     work: [
       {
