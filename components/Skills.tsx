@@ -5,10 +5,10 @@ import { IconSkills } from "@/constants";
 
 const Skills = () => {
   return (
-    <section id="Skills" className="font-montserrat text-white ">
+    <section id="Skills" className=" text-white ">
       <div className="flex flex-col items-center justify-center mx-8">
         <div className=" w-full">
-          <h3 className=" flex text-black dark:text-[#ADB7BE] transition duration-300 justify-center text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
+          <h3 className=" flex text-black dark:text-[#ADB7BE] transition duration-300 justify-center text-4xl sm:text-5xl lg:text-6xl font-semibold mb-4">
             Skills
           </h3>
           <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300  max-w-[100px] sm:max-w-[150px] flex justify-center m-auto mb-6 sm:mb-12" />

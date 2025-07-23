@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Open_Sans } from "next/font/google";
 
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 
 import { ThemeProvider } from "@/components/Provider";
 import Footer from "@/components/Footer";
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  variable: "--font-open-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Fateh's Protfolio",
@@ -19,7 +25,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className=" transition duration-300 antialiased ">
+      <body
+        className={` transition duration-300 antialiased ${openSans.variable} font-open`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

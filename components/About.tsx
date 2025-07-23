@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section
       id="Aboutme"
-      className="font-montserrat text-white max-w-7xl mx-auto"
+      className=" text-white max-w-7xl mx-auto font-semibold"
     >
       <DivMotion
         className="flex items-center justify-center mx-8"
@@ -22,7 +22,7 @@ const About = () => {
         animate={isInView ? { opacity: 1, x: 0 } : {}}
       >
         <div className="my-10  w-full ">
-          <h3 className=" flex text-black dark:text-[#ADB7BE] transition duration-300 justify-center text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
+          <h3 className=" flex text-black dark:text-[#ADB7BE] transition duration-300 justify-center text-4xl sm:text-5xl lg:text-6xl  mb-4">
             About Me
           </h3>
           <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300  max-w-[100px] flex justify-center m-auto mb-6 sm:mb-12" />
@@ -32,7 +32,7 @@ const About = () => {
             ref={ref}
           >
             <HeroGeometric />
-            <p className="text-black dark:text-[#ADB7BE] transiton duration-300 font-extrabold  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-7 z-10">
+            <p className="text-black dark:text-[#ADB7BE] transiton duration-300  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-7 z-10">
               Hi, my name is fateh and I am a Software Engineer and a Front-End
               Developer from Algeria. my expertise lies in translating desings
               into fully functional websites while utilizing my developement
@@ -48,7 +48,7 @@ const About = () => {
         animate={isInView ? { opacity: 1, x: 0 } : {}}
       >
         <div className=" my-10 w-full">
-          <h3 className="flex text-black dark:text-[#ADB7BE]  transition duration-300 justify-center text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4">
+          <h3 className="flex text-black dark:text-[#ADB7BE]  transition duration-300 justify-center text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             Get to know me
           </h3>
           <div className="mt-1 h-1 bg-black dark:bg-[#ADB7BE]  transition duration-300 max-w-[100px] flex justify-center m-auto mb-6 sm:mb-12 " />

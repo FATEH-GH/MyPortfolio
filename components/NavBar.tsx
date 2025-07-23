@@ -8,13 +8,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navigation } from "@/constants";
 import { FloatingNav } from "./ui/floating-navbar";
 import { useState } from "react";
-import {
-  motion,
-  AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
-} from "motion/react";
-import { Button } from "./ui/Button";
+import { motion, useScroll, useMotionValueEvent } from "motion/react";
 
 const NavBar = () => {
   const { scrollYProgress } = useScroll();
@@ -75,7 +69,7 @@ const NavBar = () => {
             <Link
               href={nav.href}
               key={nav.name}
-              className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150"
+              className="hover:text-customColor hover:scale-110 trasition-all duration-150"
             >
               {nav.name}
             </Link>

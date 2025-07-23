@@ -61,7 +61,7 @@ function ElegantShape({
             "backdrop-blur-[2px] border-0 border-white/[0.15]",
             "shadow-[0_8px_32px_0_rgba(240,190,109,1)]",
             "after:absolute after:inset-0 after:rounded-full",
-            "after:bg-[radial-gradient(circle_at_100%_100%,rgba(240,190,109,1),transparent_100%)]"
+            "after:bg-[radial-gradient(circle_at_100%_100%,rgba(196,127,8,1),transparent_100%)]"
           )}
         />
       </motion.div>

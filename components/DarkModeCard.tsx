@@ -29,7 +29,7 @@ export default function DarkModeCard() {
 
   return (
     <Button
-      className="p-4"
+      className="p-4 hover:scale-105 active:scale-95 border-foreground border-2"
       variant="outline"
       size="icon"
       onClick={() =>

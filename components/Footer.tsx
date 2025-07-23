@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-linear-to-b  p-4 rounded-t-xl bg-radial-dot-pattern ">
       <div className="flex items-center justify-evenly">
         <div className="flex flex-col items-center justify-center gap-4 mb-4">
-          <h3 className="font-montserrat font-extrabold text-xl  sm:text-lg lg:text-xl xl:text-3xl  text-black dark:text-slate-200">
+          <h3 className="font-semibold text-xl  sm:text-lg lg:text-xl xl:text-3xl  text-black dark:text-slate-200">
             Socials
           </h3>
           <div className="flex gap-4">
@@ -35,14 +35,14 @@ const Footer = () => {
             <Link
               href={link.href}
               key={link.name}
-              className="hover:text-[#f0be6d] hover:scale-110 trasition-all duration-150 text-xl  sm:text-lg lg:text-xl xl:text-3xl"
+              className="hover:text-customColor hover:scale-110 trasition-all duration-150 text-xl  sm:text-lg lg:text-xl xl:text-3xl"
             >
               {link.name}
             </Link>
           ))}
         </div>
       </div>
-      <div className="mt-1 h-1 bg-[#f0be6d]  flex justify-center mx-10 mb-6 " />
+      <div className="mt-1 h-1 bg-customColor  flex justify-center mx-10 mb-6 " />
       <div>
         <p className="text-black dark:text-slate-200 text-xs sm:text-sm text-center">
           &copy; Copyright 2025. Made by{" "}
