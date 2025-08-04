@@ -63,7 +63,7 @@ const NavBar = () => {
           transition={{
             duration: 0.1,
           }}
-          className=" hidden  text-xl font-bold md:flex gap-20 text-black dark:text-slate-200 transition duration-300 mx-2"
+          className=" hidden  text-xl font-bold md:flex gap-20 text-black dark:text-slate-200 transition duration-300 md:mt-2 mx-2"
         >
           {navigation.map((nav) => (
             <Link
