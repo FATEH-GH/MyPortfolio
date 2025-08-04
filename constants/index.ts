@@ -13,7 +13,7 @@ export const projects = [
     subProject2: "/project-3-2.png",
     title: "GYMANIA",
     link: "https://gymania.vercel.app/",
-    describtion:
+    description:
       "Welcome to GYMANIA, your go-to destination for a diverse and dynamic collection of gym exercises!  our website is designed to empower you with a wealth of workout options tailored to meet your goals.",
   },
   {
@@ -22,7 +22,7 @@ export const projects = [
     subProject2: "/project-1-2.png",
     title: "Adidas",
     link: "https://adidas-gamma.vercel.app/",
-    describtion:
+    description:
       "Discover stylish Adidas arrivals, quality confort, and innovation for your active life. A nodern adidas landing page that i chose to remake, which is responsive across all devices (tablets, laptops, mobile...) hope you like it :) .",
   },
   {
@@ -31,7 +31,7 @@ export const projects = [
     subProject2: "/project-6-2.png",
     title: "Weather",
     link: "https://weather-nu-nine.vercel.app/",
-    describtion:
+    description:
       "Weather is a sleek and user-friendly weather application designed to provide real-time weather updates at your fingertips. With a clean and intuitive interface, users can effortlessly access accurate weather information for any location around the globe..",
   },
   {
@@ -40,7 +40,7 @@ export const projects = [
     subProject2: "/project-5-2.png",
     title: "Dropbox2.0",
     link: "https://dropbox-zeta.vercel.app/",
-    describtion:
+    description:
       "Dropbox has proven to be extremely useful for social networks, so i tried to make a clone. Feel free to test it your self you can sign up to have the the full user experience (your data will be deleted as soon as you sign out) enjoy :P.",
   },
 
@@ -50,7 +50,7 @@ export const projects = [
     subProject2: "/project-2-2.png",
     title: "Hilink",
     link: "https://travel-sigma-fawn.vercel.app/",
-    describtion:
+    description:
       "Only with the hilink application you will no longer get lost, because we already support offline maps when there is no internet connection in the field, i helped designing the website.",
   },
 ];
