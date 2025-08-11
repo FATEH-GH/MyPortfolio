@@ -30,17 +30,17 @@ const NavBar = () => {
       <div className="flex justify-end md:justify-center items-center mx-auto  max-w-6xl p-1 ">
         <Sheet>
           <SheetTrigger asChild>
-            <div className="flex flex-col gap-0.5 justify-center items-center lg:hidden cursor-pointer border-4 mr-4 mt-6 sticky">
+            <div className="md:hidden flex flex-col gap-0.5 justify-center items-center lg:hidden cursor-pointer border-4 mr-4 mt-6 sticky">
               <span
-                className="md:hidden bg-black dark:bg-slate-200  block transition-all duration-300 ease-out 
+                className=" bg-black dark:bg-slate-200  block transition-all duration-300 ease-out 
                       h-1 w-6 rounded-sm "
               ></span>
               <span
-                className="md:hidden bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
+                className=" bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
                     h-1 w-6 rounded-sm my-0.5 "
               ></span>
               <span
-                className="md:hidden bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
+                className=" bg-black dark:bg-slate-200 block transition-all duration-300 ease-out 
                     h-1 w-6 rounded-sm "
               ></span>
             </div>

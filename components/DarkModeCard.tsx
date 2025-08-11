@@ -28,17 +28,28 @@ export default function DarkModeCard() {
   );
 
   return (
-    <Button
-      className="p-4 hover:scale-105 active:scale-95 border-foreground border-2"
-      variant="outline"
-      size="icon"
-      onClick={() =>
-        handleChangeTheme(currentTheme === "light" ? "dark" : "light")
-      }
-    >
-      <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-      <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-      <span className="sr-only">Toggle theme</span>
-    </Button>
+    <div className="relative group inline-block">
+      <Button
+        className="p-4 hover:scale-105 active:scale-95 border-foreground border-2"
+        variant="outline"
+        size="icon"
+        onClick={() =>
+          handleChangeTheme(currentTheme === "light" ? "dark" : "light")
+        }
+      >
+        <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+        <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+        <span className="sr-only">Toggle theme</span>
+      </Button>
+
+      {/* Tooltip */}
+      <div
+        className="absolute left-1/2 -translate-x-1/2 top-10 opacity-0  group-hover:opacity-100 
+                      transition  text-xs px-2 py-1 rounded-md shadow-md 
+                      pointer-events-none whitespace-nowrap"
+      >
+        Ctrl + U
+      </div>
+    </div>
   );
 }
