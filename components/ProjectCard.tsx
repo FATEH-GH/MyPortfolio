@@ -97,7 +97,7 @@ const Projectproject = () => {
                   <Link
                     href={active.link}
                     target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-customColor hover:bg-customColorHover text-white"
+                    className="px-4 py-3 text-sm cursor-pointer rounded-full font-bold bg-customColor hover:bg-customColorHover text-white"
                   >
                     View
                   </Link>
@@ -123,14 +123,13 @@ const Projectproject = () => {
           <motion.div
             layoutId={`project-${project.title}-${id}`}
             key={`project-${project.title}-${id}`}
-            onClick={() => setActive(project)}
-            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl"
           >
             <div className="flex gap-4 flex-col md:flex-row ">
               <motion.div layoutId={`image-${project.title}-${id}`}>
                 <Image
-                  width={200}
-                  height={200}
+                  width={300}
+                  height={300}
                   src={project.mainProject}
                   alt={project.title}
                   className="rounded-lg object-contain object-top"
@@ -147,7 +146,8 @@ const Projectproject = () => {
             </div>
             <motion.button
               layoutId={`button-${project.title}-${id}`}
-              className="px-4 py-2  rounded-full font-bold bg-customColor   hover:bg-customColorHover  mt-4 md:mt-0"
+              className="px-4 py-2 cursor-pointer rounded-full font-bold bg-customColor   hover:bg-customColorHover  mt-4 md:mt-0"
+              onClick={() => setActive(project)}
             >
               View
             </motion.button>
@@ -159,36 +159,3 @@ const Projectproject = () => {
 };
 
 export default Projectproject;
-
-export const CloseIcon = () => {
-  return (
-    <motion.svg
-      initial={{
-        opacity: 0,
-      }}
-      animate={{
-        opacity: 1,
-      }}
-      exit={{
-        opacity: 0,
-        transition: {
-          duration: 0.05,
-        },
-      }}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="orange"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="h-6 w-6 md:h-8 md:w-8 hover:scale-105 text-black"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M18 6l-12 12" />
-      <path d="M6 6l12 12" />
-    </motion.svg>
-  );
-};
