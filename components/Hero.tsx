@@ -1,23 +1,41 @@
 "use client";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
-import { DivMotion } from "./FramerMotion";
 import { BoxReveal } from "./ui/BoxReveal";
+import { Badge } from "./ui/badge";
+import { Download, Zap } from "lucide-react";
+import { motion } from "framer-motion";
+import { AnimatedGridPattern } from "./ui/animated-grid-pattern";
+import { cn } from "@/lib/utils";
 
 const Hero = () => {
   return (
-    <section className="h-screen lg:py-4 flex flex-col justify-center items-center z-10   ">
-      <DivMotion
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className=" mx-auto lg:pt-14"
-      >
-        <BoxReveal duration={0.5} boxColor="#f59f0a ">
-          <h1 className="ml-4 text-customColor transiton mb-4 text-3xl sm:text-5xl lg:text-6xl font-bold ">
-            <span className=" bg-clip-text text-black dark:text-white">
+    <motion.section
+      className="h-screen lg:py-4 flex flex-col justify-center items-center relative  "
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
+      <AnimatedGridPattern
+        numSquares={30}
+        maxOpacity={0.1}
+        duration={3}
+        repeatDelay={1}
+        className={cn(
+          "[mask-image:radial-gradient(250px_circle_at_center,white,transparent)] sm:[mask-image:radial-gradient(450px_circle_at_center,white,transparent)]",
+          "inset-x-0 inset-y-[-60%] h-[200%] skew-y-12 border-2  border-amber-500"
+        )}
+      />
+      <Badge className="text-lg font-bold my-4">
+        <Zap size={20} />
+        <p className=" font-bold "> Frontend Web Developer</p>
+      </Badge>
+      <div className=" mx-auto lg:pt-14">
+        <BoxReveal duration={0.5} boxColor="#f59f0a " className=" mx-auto">
+          <h1 className=" text-customColor transiton mb-4 text-3xl sm:text-5xl lg:text-6xl font-bold text-center">
+            <span className=" bg-clip-text text-black dark:text-white ">
               Hello👋, I&apos;m{" "}
             </span>
-            <br></br>
+            <br />
             <TypeAnimation
               sequence={[
                 1500,
@@ -27,7 +45,7 @@ const Hero = () => {
                 2000,
                 "Web Developer",
                 2000,
-                "Front-End Developer",
+                "Frontend Developer",
                 2000,
               ]}
               wrapper="span"
@@ -37,27 +55,16 @@ const Hero = () => {
           </h1>
         </BoxReveal>
         <BoxReveal duration={0.5} boxColor="#f59f0a ">
-          <p className="ml-4 text-black dark:text-[#ADB7BE] transiton font-semibold px-2 sm:text-lg mb-6 lg:text-xl max-w-2xl">
-            A focused Frontend Web Developer building the Frontend of Websites
-            and Web Applications that lead to the success of the overall
-            product.
+          <p className="ml-4 text-black dark:text-[#ADB7BE] transiton font-semibold px-2 sm:text-lg mb-6 lg:text-xl max-w-4xl">
+            Hey there! I&apos;m Fateh, a Frontend Developer passionate about
+            crafting modern, responsive, and user-friendly web experiences. From
+            building pixel-perfect UIs to optimizing performance and
+            accessibility, I bring ideas to life with clean code and thoughtful
+            design. Let’s build something amazing together! 🚀
           </p>
         </BoxReveal>
-        <BoxReveal
-          duration={0.5}
-          boxColor="#f0be6d"
-          className="flex flex-col gap-4 sm:flex-row items-center justify-center  xl:mt-12  h-12"
-        >
-          <Link
-            target="_blank"
-            href="/GHRIBI Fateh Abdennour.pdf"
-            className="rounded-xl bg-customColor hover:bg-customColorHover text-black dark:text-white mx-4 p-2 font-semibold"
-          >
-            Download CV
-          </Link>
-        </BoxReveal>
-      </DivMotion>
-    </section>
+      </div>
+    </motion.section>
   );
 };
 

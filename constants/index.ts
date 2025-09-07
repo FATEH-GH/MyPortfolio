@@ -190,18 +190,4 @@ export const experience = [
       },
     ],
   },
-  {
-    image: "/highschool.png",
-    title: "Kasdi Merbah High School",
-    degree: "BACHELOR'S",
-    date: "Sep 2017-Jun 2018",
-    speciality: "DEGREE IN EXPERIMENTAL SCIENCES",
-    skills: [],
-    work: [
-      {
-        icon: "",
-        role: "",
-      },
-    ],
-  },
 ];
