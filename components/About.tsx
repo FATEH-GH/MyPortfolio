@@ -16,10 +16,10 @@ const About = () => {
   return (
     <section
       id="Aboutme"
-      className=" text-white max-w-8xl mx-auto font-semibold"
+      className=" text-white max-w-8xl mx-auto font-semibold px-1"
     >
       <DivMotion
-        className="flex items-center justify-center mx-8 "
+        className="flex items-center justify-center mx-0 md:mx-4"
         initial={{ opacity: 0, x: -30 }}
         transition={{ duration: 1 }}
         animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -34,7 +34,7 @@ const About = () => {
             ref={ref}
           >
             <div className="">
-              <h2 className=" mb-4 text-2xl sm:text-4xl lg:text-5xl font-bold ">
+              <h2 className=" mb-4 text-xl sm:text-4xl lg:text-5xl font-bold max-sm:text-center ">
                 Passionate about creating impactful web experiences
               </h2>
               <p className="text-black dark:text-[#ADB7BE] transiton duration-300  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-7 z-10">
