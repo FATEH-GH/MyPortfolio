@@ -33,11 +33,11 @@ const About = () => {
             className="flex flex-col gap-8 lg:flex-row justify-between items-center  px-2 sm:px-4"
             ref={ref}
           >
-            <div className="">
-              <h2 className=" mb-4 text-xl sm:text-4xl lg:text-5xl font-bold max-sm:text-center ">
+            <div className="text-black dark:text-[#ADB7BE]">
+              <h2 className=" mb-4 text-xl sm:text-4xl lg:text-5xl font-bold max-sm:text-center px-2 ">
                 Passionate about creating impactful web experiences
               </h2>
-              <p className="text-black dark:text-[#ADB7BE] transiton duration-300  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-7 z-10">
+              <p className=" transiton duration-300  px-2 sm:text-lg mb-6 lg:text-xl  lg:max-w-[600px] leading-7 z-10">
                 With over 2 years of experience in Frontend development, I
                 specialize in building scalable web applications using modern
                 technologies. My expertise includes React, Node.js, and cloud
