@@ -47,7 +47,7 @@ const About = () => {
               </p>
               <Link
                 target="_blank"
-                href="/GHRIBI Fateh Abdennour.pdf"
+                href="/GHRIBI Fateh Abdennour Front End Engineer.pdf"
                 className=" flex gap-2 rounded-full bg-customColor hover:bg-customColorHover text-black dark:text-white mx-4 p-2 font-semibold w-fit"
               >
                 <Download />
