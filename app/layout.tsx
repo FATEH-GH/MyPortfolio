@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Open_Sans } from "next/font/google";
 
@@ -11,6 +12,7 @@ const openSans = Open_Sans({
   subsets: ["latin"],
   variable: "--font-open-sans",
   display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -24,16 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={` transition duration-300 antialiased ${openSans.variable} font-open`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider>
           <NavBar />
           {children}
           <SpeedInsights />
