@@ -13,7 +13,7 @@ const Footer = () => {
         glow={true}
         className={cn(
           "sm:[mask-image:radial-gradient(600px_circle_at_center,white,transparent)] ",
-          "[mask-image:radial-gradient(200px_circle_at_center,white,transparent)]"
+          "[mask-image:radial-gradient(200px_circle_at_center,white,transparent)]",
         )}
       />
       <div className="flex items-center justify-center">
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="text-black dark:text-slate-200 text-xs sm:text-sm text-center">
-          &copy; Copyright 2025. Made by{" "}
+          &copy; Copyright {new Date().getFullYear()}. Made by{" "}
           <Link href="/" className="font-bold">
             ABDENNOUR FATEH GHRIBI
           </Link>

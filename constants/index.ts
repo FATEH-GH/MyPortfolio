@@ -129,6 +129,25 @@ export const IconSkills = [
 
 export const experience = [
   {
+    image: "/HCN.jpg",
+    title: "High Commision For Digitalisation",
+    degree: "",
+    date: "Nov 2025-Present",
+    speciality: "Software Engenieer",
+    skills: [
+      "Containerizing applications with Docker.",
+      "Managing multi-service environments with Docker Compose.",
+      "Working with Linux-based virtual machines (Ubuntu).",
+      "Using Linux command-line tools for development and deployment.",
+    ],
+    work: [
+      {
+        icon: "",
+        role: "",
+      },
+    ],
+  },
+  {
     image: "/Gendarmerie.png",
     title: "MDN",
     degree: "GAP YEAR | Military Service",
@@ -142,7 +161,7 @@ export const experience = [
       },
       {
         icon: "💻",
-        role: "Worked as a software engineer",
+        role: "Worked as a software engineer.",
       },
       {
         icon: "👨‍🏫",
@@ -157,9 +176,9 @@ export const experience = [
     date: "Sep 2022-Jun 2023",
     speciality: "ACADEMIC BACKGROUND IN SOFTWARE ENGINEERING",
     skills: [
-      "Software Engineering",
-      "Advanced database structures ",
-      "Design of software architecture and interfaces",
+      "Software Engineering.",
+      "Advanced database structures.",
+      "Design of software architecture and interfaces.",
       "design efficient, scalable, and maintainable software systems to solve them.",
       "Work in teams with other engineers, product managers, designers, and stakeholders.",
     ],
@@ -178,9 +197,9 @@ export const experience = [
     speciality:
       "ACADEMIC BACKGROUND IN INFORMATION SYSTEMS AND SOFTWARE ENGINEERING",
     skills: [
-      "Algorithms and data Structures",
-      "Software Engineering",
-      "Databases and problem solving",
+      "Algorithms and data Structures.",
+      "Software Engineering.",
+      "Databases and problem solving.",
       "Design and manage databases, write queries, and ensure data integrity and performance.",
     ],
     work: [
